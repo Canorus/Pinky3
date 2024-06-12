@@ -1,0 +1,5376 @@
+(kicad_pcb
+	(version 20240108)
+	(generator "pcbnew")
+	(generator_version "8.0")
+	(general
+		(thickness 1.6)
+		(legacy_teardrops no)
+	)
+	(paper "A4")
+	(title_block
+		(title "Pinky3 PCB Design")
+		(date "2018-12-23")
+		(rev "0.3")
+		(company "@tamanishi")
+	)
+	(layers
+		(0 "F.Cu" signal)
+		(31 "B.Cu" signal)
+		(32 "B.Adhes" user "B.Adhesive")
+		(33 "F.Adhes" user "F.Adhesive")
+		(34 "B.Paste" user)
+		(35 "F.Paste" user)
+		(36 "B.SilkS" user "B.Silkscreen")
+		(37 "F.SilkS" user "F.Silkscreen")
+		(38 "B.Mask" user)
+		(39 "F.Mask" user)
+		(40 "Dwgs.User" user "User.Drawings")
+		(41 "Cmts.User" user "User.Comments")
+		(42 "Eco1.User" user "User.Eco1")
+		(43 "Eco2.User" user "User.Eco2")
+		(44 "Edge.Cuts" user)
+		(45 "Margin" user)
+		(46 "B.CrtYd" user "B.Courtyard")
+		(47 "F.CrtYd" user "F.Courtyard")
+		(48 "B.Fab" user)
+		(49 "F.Fab" user)
+	)
+	(setup
+		(stackup
+			(layer "F.SilkS"
+				(type "Top Silk Screen")
+			)
+			(layer "F.Paste"
+				(type "Top Solder Paste")
+			)
+			(layer "F.Mask"
+				(type "Top Solder Mask")
+				(thickness 0.01)
+			)
+			(layer "F.Cu"
+				(type "copper")
+				(thickness 0.035)
+			)
+			(layer "dielectric 1"
+				(type "core")
+				(thickness 1.51)
+				(material "FR4")
+				(epsilon_r 4.5)
+				(loss_tangent 0.02)
+			)
+			(layer "B.Cu"
+				(type "copper")
+				(thickness 0.035)
+			)
+			(layer "B.Mask"
+				(type "Bottom Solder Mask")
+				(thickness 0.01)
+			)
+			(layer "B.Paste"
+				(type "Bottom Solder Paste")
+			)
+			(layer "B.SilkS"
+				(type "Bottom Silk Screen")
+			)
+			(copper_finish "None")
+			(dielectric_constraints no)
+		)
+		(pad_to_mask_clearance 0.2)
+		(solder_mask_min_width 0.25)
+		(allow_soldermask_bridges_in_footprints no)
+		(aux_axis_origin 41 54.3)
+		(pcbplotparams
+			(layerselection 0x00010f0_ffffffff)
+			(plot_on_all_layers_selection 0x0000000_00000000)
+			(disableapertmacros no)
+			(usegerberextensions no)
+			(usegerberattributes no)
+			(usegerberadvancedattributes no)
+			(creategerberjobfile no)
+			(dashed_line_dash_ratio 12.000000)
+			(dashed_line_gap_ratio 3.000000)
+			(svgprecision 4)
+			(plotframeref no)
+			(viasonmask no)
+			(mode 1)
+			(useauxorigin no)
+			(hpglpennumber 1)
+			(hpglpenspeed 20)
+			(hpglpendiameter 15.000000)
+			(pdf_front_fp_property_popups yes)
+			(pdf_back_fp_property_popups yes)
+			(dxfpolygonmode yes)
+			(dxfimperialunits yes)
+			(dxfusepcbnewfont yes)
+			(psnegative no)
+			(psa4output no)
+			(plotreference yes)
+			(plotvalue yes)
+			(plotfptext yes)
+			(plotinvisibletext no)
+			(sketchpadsonfab no)
+			(subtractmaskfromsilk no)
+			(outputformat 1)
+			(mirror no)
+			(drillshape 0)
+			(scaleselection 1)
+			(outputdirectory "Gerber/")
+		)
+	)
+	(net 0 "")
+	(net 1 "GND")
+	(footprint "PCM_SparkFun-Hardware:Standoff_Reflow-M2.0"
+		(layer "F.Cu")
+		(uuid "00000000-0000-0000-0000-00005bdf1c81")
+		(at 59.5 78.55)
+		(descr "SMD Reflow Compatible Standoff M2x0.4")
+		(tags "SparkFun")
+		(property "Reference" "Ref**"
+			(at 4.22 -0.93 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "2e5d4d97-b423-40b0-b7d0-436b2363dbcb")
+			(effects
+				(font
+					(size 0.5 0.5)
+					(thickness 0.1)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Value" "Val**"
+			(at 4.22 2.1 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "7390db17-d0fb-4ee5-ba23-d7c95fe12a29")
+			(effects
+				(font
+					(size 0.5 0.5)
+					(thickness 0.1)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Footprint" "PCM_SparkFun-Hardware:Standoff_Reflow-M2.0"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "c0238878-eb80-40c4-bcb0-27d5f2ab78f6")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "2ea58dc9-4be3-4ccb-8ddb-1bb3849cccb8")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "86fbfdca-e776-4bee-bde6-b158df16da07")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(pad "" np_thru_hole circle
+			(at 0 0)
+			(size 3 3)
+			(drill 3)
+			(layers "*.Cu" "*.Mask")
+			(uuid "c84ec9ef-7863-429f-b069-59615239207e")
+		)
+	)
+	(footprint "PCM_SparkFun-Hardware:Standoff_Reflow-M2.0"
+		(layer "F.Cu")
+		(uuid "00000000-0000-0000-0000-00005bdf1c89")
+		(at 59.5 97.6)
+		(descr "SMD Reflow Compatible Standoff M2x0.4")
+		(tags "SparkFun")
+		(property "Reference" "Ref**"
+			(at 4.22 -0.93 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "b1c2abd1-3855-4b87-9239-2be8d40d71ca")
+			(effects
+				(font
+					(size 0.5 0.5)
+					(thickness 0.1)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Value" "Val**"
+			(at 4.22 2.1 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "3cce1c27-8b2b-4b14-9d6f-d563d3f2c996")
+			(effects
+				(font
+					(size 0.5 0.5)
+					(thickness 0.1)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Footprint" "PCM_SparkFun-Hardware:Standoff_Reflow-M2.0"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "860422ba-aa10-416e-a6ed-5c431a476bf9")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "19904203-1323-4887-9e6b-71cad13828eb")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "9e3ae9d2-97c4-4e15-9ef6-ffe6edd0e051")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(fp_text user "${REFERENCE}"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(uuid "91274797-9307-408c-87e2-a697fafef5a8")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(pad "" np_thru_hole circle
+			(at 0 0)
+			(size 3 3)
+			(drill 3)
+			(layers "*.Cu" "*.Mask")
+			(uuid "a202b36c-5021-42e9-88f2-9c918f1c14d9")
+		)
+	)
+	(footprint "PCM_SparkFun-Hardware:Standoff_Reflow-M2.0"
+		(layer "F.Cu")
+		(uuid "00000000-0000-0000-0000-00005bdf1c99")
+		(at 117.077615 95.32352)
+		(descr "SMD Reflow Compatible Standoff M2x0.4")
+		(tags "SparkFun")
+		(property "Reference" "Ref**"
+			(at 4.22 -0.93 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "ea1789ae-9b4a-42a3-a7bf-67d9bec41ef3")
+			(effects
+				(font
+					(size 0.5 0.5)
+					(thickness 0.1)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Value" "Val**"
+			(at 4.22 2.1 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "2525054b-c148-4a01-9573-022640f610bd")
+			(effects
+				(font
+					(size 0.5 0.5)
+					(thickness 0.1)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Footprint" "PCM_SparkFun-Hardware:Standoff_Reflow-M2.0"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "a14b8683-1b03-43da-8caa-7add1f88f7d6")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "d9863691-4cad-4811-829a-cd6a7c6e11a1")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "418bd580-5715-429c-aceb-9cd21a857ed4")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(fp_text user "${REFERENCE}"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(uuid "28eca692-3208-47a7-9863-e8b1bcb7d4b0")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(pad "" np_thru_hole circle
+			(at 0 0)
+			(size 3 3)
+			(drill 3)
+			(layers "*.Cu" "*.Mask")
+			(uuid "fa246af7-8a9c-40af-a283-8d8aaf540f25")
+		)
+	)
+	(footprint "PCM_SparkFun-Hardware:Standoff_Reflow-M2.0"
+		(layer "F.Cu")
+		(uuid "00000000-0000-0000-0000-00005bdf2e30")
+		(at 154.94 83.82)
+		(descr "SMD Reflow Compatible Standoff M2x0.4")
+		(tags "SparkFun")
+		(property "Reference" "Ref**"
+			(at 4.22 -0.93 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "e600a46c-4f0a-4ff9-b5fe-6f491733a643")
+			(effects
+				(font
+					(size 0.5 0.5)
+					(thickness 0.1)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Value" "Val**"
+			(at 4.22 2.1 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "87e36e3b-dd2d-4f94-90c9-0415a294ee56")
+			(effects
+				(font
+					(size 0.5 0.5)
+					(thickness 0.1)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Footprint" "PCM_SparkFun-Hardware:Standoff_Reflow-M2.0"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "fb3850d8-51f0-4fe3-8048-004cdafea2d3")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "e3327dc9-4503-4d1e-8013-f0e329e4c625")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "2bc72b30-0694-467e-94d4-39d18d34e937")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(fp_text user "${REFERENCE}"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(uuid "8ca02243-3922-47d1-aa62-23efe4a2e5e3")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(pad "" np_thru_hole circle
+			(at 0 0)
+			(size 3 3)
+			(drill 3)
+			(layers "*.Cu" "*.Mask")
+			(uuid "45852fdb-da29-4cf8-8a24-5e3d13d85948")
+		)
+	)
+	(footprint "Switch_Keyboard_Hotswap_Kailh:SW_Hotswap_Kailh_Choc_V1V2_hole"
+		(layer "F.Cu")
+		(uuid "00000000-0000-0000-0000-00005be31755")
+		(at 50 69.05 180)
+		(descr "Kailh Choc keyswitch V1V2 CPG1350 V1 CPG1353 V2 Hotswap")
+		(tags "Kailh Choc Keyswitch Switch CPG1350 V1 CPG1353 V2 Hotswap Cutout")
+		(property "Reference" "SW2"
+			(at 0 -9 180)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "c4b9e1c4-6fa1-4be8-8b7b-1f0cb991c296")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Value" "SW_PUSH"
+			(at 0 9 180)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "e959fc13-9e6e-4393-8f2c-1fabbaa19691")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Footprint" "Switch_Keyboard_Hotswap_Kailh:SW_Hotswap_Kailh_Choc_V1V2_hole"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "46a0ed66-9f1e-4396-a8cb-5831f3fdefdf")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "afafe51c-83b1-4d48-a95d-03de1a0518e3")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "eec30f83-ad99-4328-8547-37ef552c9b68")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(path "/00000000-0000-0000-0000-00005bc302d5")
+		(attr smd)
+		(fp_line
+			(start 7.6 7.6)
+			(end 7.6 -7.6)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "Edge.Cuts")
+			(uuid "749169f5-e4a3-42d7-805c-e3d90eb8a460")
+		)
+		(fp_line
+			(start 7.6 -7.6)
+			(end -7.6 -7.6)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "Edge.Cuts")
+			(uuid "fc4df0a0-9853-4a81-93e9-ac3a6ff687c5")
+		)
+		(fp_line
+			(start -7.6 7.6)
+			(end 7.6 7.6)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "Edge.Cuts")
+			(uuid "68f07cb3-2f4f-4047-b6a7-172dd8fb22ef")
+		)
+		(fp_line
+			(start -7.6 -7.6)
+			(end -7.6 7.6)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "Edge.Cuts")
+			(uuid "6c61f347-4185-4b6c-85ae-031bf33e7b7e")
+		)
+		(fp_line
+			(start 7.75 7.75)
+			(end 7.75 -7.75)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "ac900d0b-69d1-44e2-8533-7e75e52282b7")
+		)
+		(fp_line
+			(start 7.75 -7.75)
+			(end -7.75 -7.75)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "72ab0f97-70a0-4850-9ab1-2abd6f98d0c2")
+		)
+		(fp_line
+			(start -7.75 7.75)
+			(end 7.75 7.75)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "c3d630fe-2dd2-46ab-ae59-f4aed1d718b1")
+		)
+		(fp_line
+			(start -7.75 -7.75)
+			(end -7.75 7.75)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "7316dbae-016f-4dac-aab6-7abeb9e535e0")
+		)
+		(model "${KICAD6_3RD_PARTY}/3dmodels/com_github_perigoso_keyswitch-kicad-library/3d-library.3dshapes/SW_Hotswap_Kailh_Choc_V1.wrl"
+			(offset
+				(xyz 0 0 0)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz 0 0 0)
+			)
+		)
+	)
+	(footprint "PCM_SparkFun-Hardware:Standoff_Reflow-M2.0"
+		(layer "F.Cu")
+		(uuid "00000000-0000-0000-0000-00005c0a86c7")
+		(at 149 120.3)
+		(descr "SMD Reflow Compatible Standoff M2x0.4")
+		(tags "SparkFun")
+		(property "Reference" "Ref**"
+			(at 4.22 -0.93 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "f2d86bb5-35f8-4c16-9ad5-3db20a86e11a")
+			(effects
+				(font
+					(size 0.5 0.5)
+					(thickness 0.1)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Value" "Val**"
+			(at 4.22 2.1 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "9ea10f05-bea2-4478-8495-f1083dfd6ffb")
+			(effects
+				(font
+					(size 0.5 0.5)
+					(thickness 0.1)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Footprint" "PCM_SparkFun-Hardware:Standoff_Reflow-M2.0"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "56cbf273-16e8-4c9a-8d4c-bd2eab5c2462")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "ed973ce4-53a5-4623-bafb-42ddefa74ab9")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "e241caa8-63eb-4989-b018-3c5fabca0c4f")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(fp_text user "${REFERENCE}"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(uuid "e3b6ee7c-d1dc-44b1-a345-f5c53b96cd43")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(pad "" np_thru_hole circle
+			(at 0 0)
+			(size 3 3)
+			(drill 3)
+			(layers "*.Cu" "*.Mask")
+			(uuid "83d57688-171b-4cfa-afed-8c65cfc3c793")
+		)
+	)
+	(footprint "Switch_Keyboard_Hotswap_Kailh:SW_Hotswap_Kailh_Choc_V1V2_hole"
+		(layer "B.Cu")
+		(uuid "07051d94-2c3d-4258-8ba2-fafa737156a0")
+		(at 69.05 88.1)
+		(descr "Kailh Choc keyswitch V1V2 CPG1350 V1 CPG1353 V2 Hotswap")
+		(tags "Kailh Choc Keyswitch Switch CPG1350 V1 CPG1353 V2 Hotswap Cutout")
+		(property "Reference" "SW5"
+			(at 0 9 0)
+			(layer "B.SilkS")
+			(hide yes)
+			(uuid "1fb796fa-9687-42ba-a443-8ad9a7045580")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Value" "SW_PUSH"
+			(at 0 -9 0)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "376b4e67-c43a-4b18-83fc-5b568fb7c4eb")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Footprint" "Switch_Keyboard_Hotswap_Kailh:SW_Hotswap_Kailh_Choc_V1V2_hole"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "1bc106f7-5ab8-4481-8f0c-94446e63664c")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "90fb314e-2dc9-4617-bf32-5579a4f3fc26")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Description" ""
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "4c7da3ce-dfe9-40dd-b354-c345dde124ad")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(attr smd)
+		(fp_line
+			(start -7.6 -7.6)
+			(end -7.6 7.6)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "Edge.Cuts")
+			(uuid "2f364130-c9fb-4197-bb67-bfe1449e317d")
+		)
+		(fp_line
+			(start -7.6 7.6)
+			(end 7.6 7.6)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "Edge.Cuts")
+			(uuid "6e5c1bde-3324-4983-8813-e98a9ab33908")
+		)
+		(fp_line
+			(start 7.6 -7.6)
+			(end -7.6 -7.6)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "Edge.Cuts")
+			(uuid "77e4deb7-3d57-46fd-8f9f-d98c771a42f5")
+		)
+		(fp_line
+			(start 7.6 7.6)
+			(end 7.6 -7.6)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "Edge.Cuts")
+			(uuid "5f3c49ac-cc24-44b9-acdc-98b2192479e2")
+		)
+		(fp_line
+			(start -7.75 -7.75)
+			(end -7.75 7.75)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "B.CrtYd")
+			(uuid "416dad72-d313-48f2-bedb-528482f285fc")
+		)
+		(fp_line
+			(start -7.75 7.75)
+			(end 7.75 7.75)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "B.CrtYd")
+			(uuid "03904e26-a5de-46b0-ab3b-a931d09bd50d")
+		)
+		(fp_line
+			(start 7.75 -7.75)
+			(end -7.75 -7.75)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "B.CrtYd")
+			(uuid "50c661b3-17c9-4c4a-994b-ee7c345cda21")
+		)
+		(fp_line
+			(start 7.75 7.75)
+			(end 7.75 -7.75)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "B.CrtYd")
+			(uuid "bd933d57-e7a4-4a76-92ee-3bedc9957ae2")
+		)
+		(model "${KICAD6_3RD_PARTY}/3dmodels/com_github_perigoso_keyswitch-kicad-library/3d-library.3dshapes/SW_Hotswap_Kailh_Choc_V1.wrl"
+			(offset
+				(xyz 0 0 0)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz 0 0 0)
+			)
+		)
+	)
+	(footprint "Switch_Keyboard_Hotswap_Kailh:SW_Hotswap_Kailh_Choc_V1V2_hole"
+		(layer "B.Cu")
+		(uuid "07a09e74-bebf-4875-bfe5-7b05373607e5")
+		(at 126.2 105.245)
+		(descr "Kailh Choc keyswitch V1V2 CPG1350 V1 CPG1353 V2 Hotswap")
+		(tags "Kailh Choc Keyswitch Switch CPG1350 V1 CPG1353 V2 Hotswap Cutout")
+		(property "Reference" "SW5"
+			(at 0 9 0)
+			(layer "B.SilkS")
+			(hide yes)
+			(uuid "750dbfd9-ced0-4cd3-8498-c4be05915ac4")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Value" "SW_PUSH"
+			(at 0 -9 0)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "42dc0a0b-67bc-435f-b923-1546cb4d5650")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Footprint" "Switch_Keyboard_Hotswap_Kailh:SW_Hotswap_Kailh_Choc_V1V2_hole"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "e8cc8273-6be0-4013-a846-a9c5f2c8b916")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "b69e2876-5dc9-48a8-bf3b-14465af95525")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Description" ""
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "81298722-9349-4ccc-a566-244d9bb8e88f")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(attr smd)
+		(fp_line
+			(start -7.6 -7.6)
+			(end -7.6 7.6)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "Edge.Cuts")
+			(uuid "fcfc8755-eb45-4f96-a321-5b71e94fd26d")
+		)
+		(fp_line
+			(start -7.6 7.6)
+			(end 7.6 7.6)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "Edge.Cuts")
+			(uuid "49978e3c-b8f4-4127-8dde-1d022c2ad1ca")
+		)
+		(fp_line
+			(start 7.6 -7.6)
+			(end -7.6 -7.6)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "Edge.Cuts")
+			(uuid "01e2cada-a234-41b7-bacc-29ce23182b1d")
+		)
+		(fp_line
+			(start 7.6 7.6)
+			(end 7.6 -7.6)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "Edge.Cuts")
+			(uuid "d341ffcb-a264-4b61-b936-4e61a7d87ede")
+		)
+		(fp_line
+			(start -7.75 -7.75)
+			(end -7.75 7.75)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "B.CrtYd")
+			(uuid "6e25286d-815a-4c4d-8940-bc164048c02a")
+		)
+		(fp_line
+			(start -7.75 7.75)
+			(end 7.75 7.75)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "B.CrtYd")
+			(uuid "177c880a-a760-4a07-bf4d-08a049541361")
+		)
+		(fp_line
+			(start 7.75 -7.75)
+			(end -7.75 -7.75)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "B.CrtYd")
+			(uuid "c943221f-9fbc-4b56-b7af-25b7833af9f8")
+		)
+		(fp_line
+			(start 7.75 7.75)
+			(end 7.75 -7.75)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "B.CrtYd")
+			(uuid "0974bc0b-5984-48f0-86e7-a39ae2355ab8")
+		)
+		(model "${KICAD6_3RD_PARTY}/3dmodels/com_github_perigoso_keyswitch-kicad-library/3d-library.3dshapes/SW_Hotswap_Kailh_Choc_V1.wrl"
+			(offset
+				(xyz 0 0 0)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz 0 0 0)
+			)
+		)
+	)
+	(footprint "Switch_Keyboard_Hotswap_Kailh:SW_Hotswap_Kailh_Choc_V1V2_hole"
+		(layer "B.Cu")
+		(uuid "0a27b9e3-63fe-45b5-b0a5-a8019e1a10dd")
+		(at 145.25 109.055)
+		(descr "Kailh Choc keyswitch V1V2 CPG1350 V1 CPG1353 V2 Hotswap")
+		(tags "Kailh Choc Keyswitch Switch CPG1350 V1 CPG1353 V2 Hotswap Cutout")
+		(property "Reference" "SW5"
+			(at 0 9 0)
+			(layer "B.SilkS")
+			(hide yes)
+			(uuid "54402aef-da15-42e2-a9bf-7769fb32e132")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Value" "SW_PUSH"
+			(at 0 -9 0)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "efa584e8-33c4-4347-85d6-8972b4898e2a")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Footprint" "Switch_Keyboard_Hotswap_Kailh:SW_Hotswap_Kailh_Choc_V1V2_hole"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "5665eea0-8f9b-4069-a46b-8533f88c0f22")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "646e0885-ff67-4bfd-8551-423bfb187941")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Description" ""
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "c50ea706-dc67-48a5-a609-80e8d993bd4f")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(attr smd)
+		(fp_line
+			(start -7.6 -7.6)
+			(end -7.6 7.6)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "Edge.Cuts")
+			(uuid "66f5544d-fcf3-4b1b-bc74-c28a0139ba0e")
+		)
+		(fp_line
+			(start -7.6 7.6)
+			(end 7.6 7.6)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "Edge.Cuts")
+			(uuid "9a9dfb34-8870-41f0-8eeb-fc28b9724029")
+		)
+		(fp_line
+			(start 7.6 -7.6)
+			(end -7.6 -7.6)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "Edge.Cuts")
+			(uuid "7a09518e-f981-4a92-9daf-f69d825e332f")
+		)
+		(fp_line
+			(start 7.6 7.6)
+			(end 7.6 -7.6)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "Edge.Cuts")
+			(uuid "169fb126-5782-40fc-8b09-c789cf7b7e09")
+		)
+		(fp_line
+			(start -7.75 -7.75)
+			(end -7.75 7.75)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "B.CrtYd")
+			(uuid "0c278246-e2ee-4de8-8cdd-2147c33ae229")
+		)
+		(fp_line
+			(start -7.75 7.75)
+			(end 7.75 7.75)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "B.CrtYd")
+			(uuid "0271c1b3-ca51-41ec-87a8-04f781c186ae")
+		)
+		(fp_line
+			(start 7.75 -7.75)
+			(end -7.75 -7.75)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "B.CrtYd")
+			(uuid "6568cab4-a3fb-4d33-a1e9-d438dc9985d2")
+		)
+		(fp_line
+			(start 7.75 7.75)
+			(end 7.75 -7.75)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "B.CrtYd")
+			(uuid "f48eb3c5-7e9d-4c44-8ee6-d9412ed261fc")
+		)
+		(model "${KICAD6_3RD_PARTY}/3dmodels/com_github_perigoso_keyswitch-kicad-library/3d-library.3dshapes/SW_Hotswap_Kailh_Choc_V1.wrl"
+			(offset
+				(xyz 0 0 0)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz 0 0 0)
+			)
+		)
+	)
+	(footprint "Switch_Keyboard_Hotswap_Kailh:SW_Hotswap_Kailh_Choc_V1V2_hole"
+		(layer "B.Cu")
+		(uuid "1df1fae2-9a0b-4aeb-93fe-7d50051a3be3")
+		(at 69.05 107.15)
+		(descr "Kailh Choc keyswitch V1V2 CPG1350 V1 CPG1353 V2 Hotswap")
+		(tags "Kailh Choc Keyswitch Switch CPG1350 V1 CPG1353 V2 Hotswap Cutout")
+		(property "Reference" "SW5"
+			(at 0 9 0)
+			(layer "B.SilkS")
+			(hide yes)
+			(uuid "071ec5d8-20da-4c9d-9f2a-e45e37298291")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Value" "SW_PUSH"
+			(at 0 -9 0)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "a22e198a-f494-4270-bce5-87804f114581")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Footprint" "Switch_Keyboard_Hotswap_Kailh:SW_Hotswap_Kailh_Choc_V1V2_hole"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "57267686-e14b-48fa-8f63-a243ab86b243")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "1a7ac090-0034-4726-885e-4b70d2d64da0")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Description" ""
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "d92811ae-1cd2-401f-a425-5bebad631c9b")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(attr smd)
+		(fp_line
+			(start -7.6 -7.6)
+			(end -7.6 7.6)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "Edge.Cuts")
+			(uuid "7f9e1c62-9373-46b8-9647-14c744acdb1b")
+		)
+		(fp_line
+			(start -7.6 7.6)
+			(end 7.6 7.6)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "Edge.Cuts")
+			(uuid "0e26b138-fcd8-4321-beb4-21d63b5140e2")
+		)
+		(fp_line
+			(start 7.6 -7.6)
+			(end -7.6 -7.6)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "Edge.Cuts")
+			(uuid "50c11841-4a70-46d8-8bf1-9acad7b43220")
+		)
+		(fp_line
+			(start 7.6 7.6)
+			(end 7.6 -7.6)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "Edge.Cuts")
+			(uuid "23de44d0-9afa-48e0-a549-5960cae932bb")
+		)
+		(fp_line
+			(start -7.75 -7.75)
+			(end -7.75 7.75)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "B.CrtYd")
+			(uuid "cfb17368-013e-466c-bb4a-7898b387639c")
+		)
+		(fp_line
+			(start -7.75 7.75)
+			(end 7.75 7.75)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "B.CrtYd")
+			(uuid "4441f056-c94c-4823-9d34-5bceea87f53a")
+		)
+		(fp_line
+			(start 7.75 -7.75)
+			(end -7.75 -7.75)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "B.CrtYd")
+			(uuid "593e65d1-d52e-4213-86af-d4c5a6261ec8")
+		)
+		(fp_line
+			(start 7.75 7.75)
+			(end 7.75 -7.75)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "B.CrtYd")
+			(uuid "2bf90086-4e8d-43ee-b3b0-e489fc1fda50")
+		)
+		(model "${KICAD6_3RD_PARTY}/3dmodels/com_github_perigoso_keyswitch-kicad-library/3d-library.3dshapes/SW_Hotswap_Kailh_Choc_V1.wrl"
+			(offset
+				(xyz 0 0 0)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz 0 0 0)
+			)
+		)
+	)
+	(footprint "Switch_Keyboard_Hotswap_Kailh:SW_Hotswap_Kailh_Choc_V1V2_hole"
+		(layer "B.Cu")
+		(uuid "2c30ed1a-7b4e-47fe-8cd3-383ded91425c")
+		(at 164.3 120.3 -24)
+		(descr "Kailh Choc keyswitch V1V2 CPG1350 V1 CPG1353 V2 Hotswap")
+		(tags "Kailh Choc Keyswitch Switch CPG1350 V1 CPG1353 V2 Hotswap Cutout")
+		(property "Reference" "SW25"
+			(at 0 9 -24)
+			(layer "B.SilkS")
+			(hide yes)
+			(uuid "d125c4c7-bae2-423d-b79e-19e0048ded63")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Value" "SW_PUSH"
+			(at 0 -9 -24)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "aaed0666-b113-49c3-bb60-52a0cd141cc5")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Footprint" "Switch_Keyboard_Hotswap_Kailh:SW_Hotswap_Kailh_Choc_V1V2_hole"
+			(at 0 0 156)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "3d1bd53b-1ab0-41bd-92da-859550382e90")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 156)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "64a9577d-1a28-4cfc-a234-d368df36264f")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Description" ""
+			(at 0 0 156)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "0bb41b3c-7155-44c7-98a0-1aeb51cd162e")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(attr smd)
+		(fp_line
+			(start -7.6 7.6)
+			(end 7.6 7.6)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "Edge.Cuts")
+			(uuid "59fba1ef-3d9c-4206-98ee-874319f8a7ec")
+		)
+		(fp_line
+			(start -7.6 -7.6)
+			(end -7.6 7.6)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "Edge.Cuts")
+			(uuid "927fa431-83aa-4b43-99e1-03b0535ab4ad")
+		)
+		(fp_line
+			(start 7.6 7.6)
+			(end 7.6 -7.6)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "Edge.Cuts")
+			(uuid "7a03aa31-fa6e-45ce-8482-6b6ec900d6c2")
+		)
+		(fp_line
+			(start 7.6 -7.6)
+			(end -7.6 -7.6)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "Edge.Cuts")
+			(uuid "5c6c428f-0366-4970-8608-c0f0d99244e5")
+		)
+		(fp_line
+			(start -7.75 7.75)
+			(end 7.75 7.75)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "B.CrtYd")
+			(uuid "bbc664f5-b10c-48b4-90cb-65a78d0664cd")
+		)
+		(fp_line
+			(start -7.75 -7.75)
+			(end -7.75 7.75)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "B.CrtYd")
+			(uuid "1f378e8d-fe72-48a9-a8e6-cd91dff89734")
+		)
+		(fp_line
+			(start 7.75 7.75)
+			(end 7.75 -7.75)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "B.CrtYd")
+			(uuid "2140943a-80fa-4337-8a34-ef036be37fbb")
+		)
+		(fp_line
+			(start 7.75 -7.75)
+			(end -7.75 -7.75)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "B.CrtYd")
+			(uuid "e5316749-0316-402f-946f-f2dcb72c92c2")
+		)
+		(model "${KICAD6_3RD_PARTY}/3dmodels/com_github_perigoso_keyswitch-kicad-library/3d-library.3dshapes/SW_Hotswap_Kailh_Choc_V1.wrl"
+			(offset
+				(xyz 0 0 0)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz 0 0 0)
+			)
+		)
+	)
+	(footprint "Switch_Keyboard_Hotswap_Kailh:SW_Hotswap_Kailh_Choc_V1V2_hole"
+		(layer "B.Cu")
+		(uuid "42ba557a-caf8-4f87-b6fc-3cda005955dc")
+		(at 127.3 128.9 -10)
+		(descr "Kailh Choc keyswitch V1V2 CPG1350 V1 CPG1353 V2 Hotswap")
+		(tags "Kailh Choc Keyswitch Switch CPG1350 V1 CPG1353 V2 Hotswap Cutout")
+		(property "Reference" "SW18"
+			(at 0 9 -10)
+			(layer "B.SilkS")
+			(hide yes)
+			(uuid "4fe2f3c7-cf0d-48e9-b79b-52eb3332c8dc")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Value" "SW_PUSH"
+			(at 0 -9 -10)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "f3eef70f-03b3-4642-868b-fbd0a6da5862")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Footprint" "Switch_Keyboard_Hotswap_Kailh:SW_Hotswap_Kailh_Choc_V1V2_hole"
+			(at 0 0 170)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "a4e9679e-c8fe-492b-848d-09002680c625")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 170)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "ae99e3aa-5f02-422c-a32e-ff15973f042d")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Description" ""
+			(at 0 0 170)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "cc966bd6-9366-45c9-aab7-dc1730f33b95")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(attr smd)
+		(fp_line
+			(start -7.6 7.6)
+			(end 7.6 7.6)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "Edge.Cuts")
+			(uuid "4174e5c2-6f1c-4c92-9d47-88da8e7c1092")
+		)
+		(fp_line
+			(start -7.6 -7.6)
+			(end -7.6 7.6)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "Edge.Cuts")
+			(uuid "1b5dd48a-cd41-42b9-aa57-827497580ea7")
+		)
+		(fp_line
+			(start 7.6 7.6)
+			(end 7.6 -7.6)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "Edge.Cuts")
+			(uuid "f09654d3-85f1-466c-9ee9-f0a222573bba")
+		)
+		(fp_line
+			(start 7.6 -7.6)
+			(end -7.6 -7.6)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "Edge.Cuts")
+			(uuid "d2f0e154-f3e5-4c13-8421-082412e8c87f")
+		)
+		(fp_line
+			(start -7.749999 7.75)
+			(end 7.75 7.749999)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "B.CrtYd")
+			(uuid "dadc2477-bf51-41a7-8771-0c04e284f91d")
+		)
+		(fp_line
+			(start -7.75 -7.749999)
+			(end -7.749999 7.75)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "B.CrtYd")
+			(uuid "530a4228-5164-4f52-b096-eabbf8f92664")
+		)
+		(fp_line
+			(start 7.75 7.749999)
+			(end 7.749999 -7.75)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "B.CrtYd")
+			(uuid "2e482b0f-958a-4405-9188-e645c8385b59")
+		)
+		(fp_line
+			(start 7.749999 -7.75)
+			(end -7.75 -7.749999)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "B.CrtYd")
+			(uuid "5b41e6e1-4d68-4ec1-ad67-679a63206192")
+		)
+		(model "${KICAD6_3RD_PARTY}/3dmodels/com_github_perigoso_keyswitch-kicad-library/3d-library.3dshapes/SW_Hotswap_Kailh_Choc_V1.wrl"
+			(offset
+				(xyz 0 0 0)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz 0 0 0)
+			)
+		)
+	)
+	(footprint "Switch_Keyboard_Hotswap_Kailh:SW_Hotswap_Kailh_Choc_V1V2_hole"
+		(layer "B.Cu")
+		(uuid "4b713571-7705-4036-87bc-54c27ef6a88f")
+		(at 165.4 142.8 -30)
+		(descr "Kailh Choc keyswitch V1V2 CPG1350 V1 CPG1353 V2 Hotswap")
+		(tags "Kailh Choc Keyswitch Switch CPG1350 V1 CPG1353 V2 Hotswap Cutout")
+		(property "Reference" "SW26"
+			(at 0 9 -30)
+			(layer "B.SilkS")
+			(hide yes)
+			(uuid "5c7864e1-b1a3-42a3-8bba-da2201acf8d8")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Value" "SW_PUSH"
+			(at 0 -9 -30)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "5f5b6f16-be97-4a32-8d17-1a0771e8024e")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Footprint" "Switch_Keyboard_Hotswap_Kailh:SW_Hotswap_Kailh_Choc_V1V2_hole"
+			(at 0 0 150)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "b14bce22-3d6c-4cfd-a58a-0435760f3a84")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 150)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "629310f0-e1f7-4c8e-bed0-95304b890261")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Description" ""
+			(at 0 0 150)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "2bb4ca46-e577-4c30-b020-6d5e894abf70")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(attr smd)
+		(fp_line
+			(start -7.6 7.6)
+			(end 7.6 7.6)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "Edge.Cuts")
+			(uuid "6715f422-5556-4db6-b256-7bcc760c9f41")
+		)
+		(fp_line
+			(start -7.6 -7.6)
+			(end -7.6 7.6)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "Edge.Cuts")
+			(uuid "d86bbc36-9a4c-42a8-b7b3-1822439129a6")
+		)
+		(fp_line
+			(start 7.6 7.6)
+			(end 7.6 -7.6)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "Edge.Cuts")
+			(uuid "25cc4e27-db71-426c-bdf4-249045b396f8")
+		)
+		(fp_line
+			(start 7.6 -7.6)
+			(end -7.6 -7.6)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "Edge.Cuts")
+			(uuid "8b84a823-56ad-442f-bb16-e3f459addc20")
+		)
+		(fp_line
+			(start -7.75 7.75)
+			(end 7.75 7.75)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "B.CrtYd")
+			(uuid "75d09a42-2a2f-4ead-bf0a-1eaa2b9d5b75")
+		)
+		(fp_line
+			(start -7.75 -7.75)
+			(end -7.75 7.75)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "B.CrtYd")
+			(uuid "aaca2432-9ca7-4657-aab8-6b10bb92a0a3")
+		)
+		(fp_line
+			(start 7.75 7.75)
+			(end 7.75 -7.75)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "B.CrtYd")
+			(uuid "18f499c8-021f-4aba-b590-15904ab17cd0")
+		)
+		(fp_line
+			(start 7.75 -7.75)
+			(end -7.75 -7.75)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "B.CrtYd")
+			(uuid "fef80ab9-87e6-47d5-bf22-b66d2a0b2163")
+		)
+		(model "${KICAD6_3RD_PARTY}/3dmodels/com_github_perigoso_keyswitch-kicad-library/3d-library.3dshapes/SW_Hotswap_Kailh_Choc_V1.wrl"
+			(offset
+				(xyz 0 0 0)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz 0 0 0)
+			)
+		)
+	)
+	(footprint "Switch_Keyboard_Hotswap_Kailh:SW_Hotswap_Kailh_Choc_V1V2_hole"
+		(layer "B.Cu")
+		(uuid "4c2c243a-19db-4785-84e8-8c3c1c31a631")
+		(at 88.1 67.145)
+		(descr "Kailh Choc keyswitch V1V2 CPG1350 V1 CPG1353 V2 Hotswap")
+		(tags "Kailh Choc Keyswitch Switch CPG1350 V1 CPG1353 V2 Hotswap Cutout")
+		(property "Reference" "SW5"
+			(at 0 9 0)
+			(layer "B.SilkS")
+			(hide yes)
+			(uuid "b413052f-60a9-4561-ad41-7bfe5d26a131")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Value" "SW_PUSH"
+			(at 0 -9 0)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "bd49c148-7f2f-403c-8fc0-9405baf2864d")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Footprint" "Switch_Keyboard_Hotswap_Kailh:SW_Hotswap_Kailh_Choc_V1V2_hole"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "675b39c6-d20c-4a17-bad8-5de7ca919a65")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "e6c65b2f-12c8-4140-9069-905b17a34d8c")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Description" ""
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "cf7f246b-8b97-4869-941b-6949597b37da")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(attr smd)
+		(fp_line
+			(start -7.6 -7.6)
+			(end -7.6 7.6)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "Edge.Cuts")
+			(uuid "cbbb414c-e395-456e-9ecf-c7e2584cd583")
+		)
+		(fp_line
+			(start -7.6 7.6)
+			(end 7.6 7.6)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "Edge.Cuts")
+			(uuid "18fe476c-fe34-4c0b-aab7-89bc6187b84a")
+		)
+		(fp_line
+			(start 7.6 -7.6)
+			(end -7.6 -7.6)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "Edge.Cuts")
+			(uuid "22170700-7bcb-4540-b1fa-6d891e18ea0f")
+		)
+		(fp_line
+			(start 7.6 7.6)
+			(end 7.6 -7.6)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "Edge.Cuts")
+			(uuid "86c07a96-c905-4b9c-aaf3-3c40bb1f1f00")
+		)
+		(fp_line
+			(start -7.75 -7.75)
+			(end -7.75 7.75)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "B.CrtYd")
+			(uuid "80484377-c9ea-4b97-84ce-8355fb9d60a5")
+		)
+		(fp_line
+			(start -7.75 7.75)
+			(end 7.75 7.75)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "B.CrtYd")
+			(uuid "c3fec419-b1ee-45e6-a1b7-b13f23b188b3")
+		)
+		(fp_line
+			(start 7.75 -7.75)
+			(end -7.75 -7.75)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "B.CrtYd")
+			(uuid "18c233bc-9934-4068-b542-7183127c2f27")
+		)
+		(fp_line
+			(start 7.75 7.75)
+			(end 7.75 -7.75)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "B.CrtYd")
+			(uuid "9274864e-1b3e-4895-8ed5-951857669f91")
+		)
+		(model "${KICAD6_3RD_PARTY}/3dmodels/com_github_perigoso_keyswitch-kicad-library/3d-library.3dshapes/SW_Hotswap_Kailh_Choc_V1.wrl"
+			(offset
+				(xyz 0 0 0)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz 0 0 0)
+			)
+		)
+	)
+	(footprint "Switch_Keyboard_Hotswap_Kailh:SW_Hotswap_Kailh_Choc_V1V2_hole"
+		(layer "B.Cu")
+		(uuid "4c4a6f40-9c91-4389-9c15-04552ac76b30")
+		(at 126.2 86.195)
+		(descr "Kailh Choc keyswitch V1V2 CPG1350 V1 CPG1353 V2 Hotswap")
+		(tags "Kailh Choc Keyswitch Switch CPG1350 V1 CPG1353 V2 Hotswap Cutout")
+		(property "Reference" "SW5"
+			(at 0 9 0)
+			(layer "B.SilkS")
+			(hide yes)
+			(uuid "b362d14d-ca3f-4d3c-9876-bc117b1db3e4")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Value" "SW_PUSH"
+			(at 0 -9 0)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "52e7fda3-af69-4910-aa8c-b5a06ab27651")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Footprint" "Switch_Keyboard_Hotswap_Kailh:SW_Hotswap_Kailh_Choc_V1V2_hole"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "5489f14d-82ee-43aa-b4db-0a65e0c48ada")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "f31b7042-433b-4245-b815-791e6b6ad98a")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Description" ""
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "82db1438-ecf9-43ff-a410-fac00d265439")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(attr smd)
+		(fp_line
+			(start -7.6 -7.6)
+			(end -7.6 7.6)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "Edge.Cuts")
+			(uuid "3b77528a-5d96-4b2c-b123-39060bb50b48")
+		)
+		(fp_line
+			(start -7.6 7.6)
+			(end 7.6 7.6)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "Edge.Cuts")
+			(uuid "6074734e-7b74-4166-a5e9-45edd4765fff")
+		)
+		(fp_line
+			(start 7.6 -7.6)
+			(end -7.6 -7.6)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "Edge.Cuts")
+			(uuid "def459ec-5e0b-496c-997b-9c696f79e46e")
+		)
+		(fp_line
+			(start 7.6 7.6)
+			(end 7.6 -7.6)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "Edge.Cuts")
+			(uuid "7f6a645a-f1af-4716-8069-dfec81ead401")
+		)
+		(fp_line
+			(start -7.75 -7.75)
+			(end -7.75 7.75)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "B.CrtYd")
+			(uuid "1bcdbf3b-0c06-4bfd-aeec-d7ed266ca0f4")
+		)
+		(fp_line
+			(start -7.75 7.75)
+			(end 7.75 7.75)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "B.CrtYd")
+			(uuid "546e1c73-8982-406d-910e-d7d617a8d28c")
+		)
+		(fp_line
+			(start 7.75 -7.75)
+			(end -7.75 -7.75)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "B.CrtYd")
+			(uuid "eac403fc-f4e4-4c5c-a311-c224025fe1e5")
+		)
+		(fp_line
+			(start 7.75 7.75)
+			(end 7.75 -7.75)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "B.CrtYd")
+			(uuid "7bd4afa6-d3d1-4082-80e9-0a6447c852ee")
+		)
+		(model "${KICAD6_3RD_PARTY}/3dmodels/com_github_perigoso_keyswitch-kicad-library/3d-library.3dshapes/SW_Hotswap_Kailh_Choc_V1.wrl"
+			(offset
+				(xyz 0 0 0)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz 0 0 0)
+			)
+		)
+	)
+	(footprint "Switch_Keyboard_Hotswap_Kailh:SW_Hotswap_Kailh_Choc_V1V2_hole"
+		(layer "B.Cu")
+		(uuid "5b1cd503-a3c7-4d6d-a65e-9afd428fc4f7")
+		(at 164.3 74.765)
+		(descr "Kailh Choc keyswitch V1V2 CPG1350 V1 CPG1353 V2 Hotswap")
+		(tags "Kailh Choc Keyswitch Switch CPG1350 V1 CPG1353 V2 Hotswap Cutout")
+		(property "Reference" "SW5"
+			(at 0 9 0)
+			(layer "B.SilkS")
+			(hide yes)
+			(uuid "f297d455-24f4-420d-8e19-857425baf192")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Value" "SW_PUSH"
+			(at 0 -9 0)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "46a917fd-ba8e-4a07-ad3c-e7c4c0770921")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Footprint" "Switch_Keyboard_Hotswap_Kailh:SW_Hotswap_Kailh_Choc_V1V2_hole"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "f8a32e66-88b9-4e97-b0cd-b2d6fd61c812")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "32e4c4de-12ba-4026-a0b3-e4f438c5f1da")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Description" ""
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "7f92f2ae-753f-4e2d-ade1-889fae2b736c")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(attr smd)
+		(fp_line
+			(start -7.6 -7.6)
+			(end -7.6 7.6)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "Edge.Cuts")
+			(uuid "7ff26d21-2e97-4e67-b0a0-f2b58668e448")
+		)
+		(fp_line
+			(start -7.6 7.6)
+			(end 7.6 7.6)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "Edge.Cuts")
+			(uuid "83a88a2a-3f6e-4398-914b-08dac0b0d072")
+		)
+		(fp_line
+			(start 7.6 -7.6)
+			(end -7.6 -7.6)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "Edge.Cuts")
+			(uuid "6ddf9372-fe1f-4887-a4e8-fe449a289118")
+		)
+		(fp_line
+			(start 7.6 7.6)
+			(end 7.6 -7.6)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "Edge.Cuts")
+			(uuid "1a1f151b-4f39-4477-86e1-05e97981bc18")
+		)
+		(fp_line
+			(start -7.75 -7.75)
+			(end -7.75 7.75)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "B.CrtYd")
+			(uuid "748f4dc3-cd5b-4e90-9d2d-cb5f64308be4")
+		)
+		(fp_line
+			(start -7.75 7.75)
+			(end 7.75 7.75)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "B.CrtYd")
+			(uuid "36250b14-9f35-499d-931d-6ef3534b710e")
+		)
+		(fp_line
+			(start 7.75 -7.75)
+			(end -7.75 -7.75)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "B.CrtYd")
+			(uuid "ff17e042-8430-4bb7-a502-8f2b7ed38c59")
+		)
+		(fp_line
+			(start 7.75 7.75)
+			(end 7.75 -7.75)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "B.CrtYd")
+			(uuid "ce6b8881-cb0a-4cf4-a918-0371d11b0a81")
+		)
+		(model "${KICAD6_3RD_PARTY}/3dmodels/com_github_perigoso_keyswitch-kicad-library/3d-library.3dshapes/SW_Hotswap_Kailh_Choc_V1.wrl"
+			(offset
+				(xyz 0 0 0)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz 0 0 0)
+			)
+		)
+	)
+	(footprint "Switch_Keyboard_Hotswap_Kailh:SW_Hotswap_Kailh_Choc_V1V2_hole"
+		(layer "B.Cu")
+		(uuid "5d9f9256-a4d3-430d-b1b0-8db0da436cd4")
+		(at 126.2 67.145)
+		(descr "Kailh Choc keyswitch V1V2 CPG1350 V1 CPG1353 V2 Hotswap")
+		(tags "Kailh Choc Keyswitch Switch CPG1350 V1 CPG1353 V2 Hotswap Cutout")
+		(property "Reference" "SW5"
+			(at 0 9 0)
+			(layer "B.SilkS")
+			(hide yes)
+			(uuid "5ecd33bb-e0dd-4069-9775-80a501359904")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Value" "SW_PUSH"
+			(at 0 -9 0)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "0029bfef-55bb-4edd-939d-3c21d7f62e1d")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Footprint" "Switch_Keyboard_Hotswap_Kailh:SW_Hotswap_Kailh_Choc_V1V2_hole"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "681617f2-46c3-419a-9297-6c9144768b7a")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "e433a119-d4bf-4346-a797-430500cbfca8")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Description" ""
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "02f76cdf-3e31-4754-85e3-cc42e1775b12")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(attr smd)
+		(fp_line
+			(start -7.6 -7.6)
+			(end -7.6 7.6)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "Edge.Cuts")
+			(uuid "4a2b69ce-1bc5-4cfb-a019-4dbd70d681e8")
+		)
+		(fp_line
+			(start -7.6 7.6)
+			(end 7.6 7.6)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "Edge.Cuts")
+			(uuid "04bca165-ef4b-49e1-ac96-c498d69913e5")
+		)
+		(fp_line
+			(start 7.6 -7.6)
+			(end -7.6 -7.6)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "Edge.Cuts")
+			(uuid "b2a5c76d-8546-4cd3-bd31-4f59af7f2dfa")
+		)
+		(fp_line
+			(start 7.6 7.6)
+			(end 7.6 -7.6)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "Edge.Cuts")
+			(uuid "a752e23a-7ad4-4361-8a89-b3d2a29d49b5")
+		)
+		(fp_line
+			(start -7.75 -7.75)
+			(end -7.75 7.75)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "B.CrtYd")
+			(uuid "b5e2b105-da98-41ca-b42f-c0dafe0f7e10")
+		)
+		(fp_line
+			(start -7.75 7.75)
+			(end 7.75 7.75)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "B.CrtYd")
+			(uuid "aa031994-6d96-463a-a185-3561ac78ac1f")
+		)
+		(fp_line
+			(start 7.75 -7.75)
+			(end -7.75 -7.75)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "B.CrtYd")
+			(uuid "96586600-d228-4494-962d-98e8287c54ce")
+		)
+		(fp_line
+			(start 7.75 7.75)
+			(end 7.75 -7.75)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "B.CrtYd")
+			(uuid "2cf603ec-1e27-4d1e-9360-281a58927f89")
+		)
+		(model "${KICAD6_3RD_PARTY}/3dmodels/com_github_perigoso_keyswitch-kicad-library/3d-library.3dshapes/SW_Hotswap_Kailh_Choc_V1.wrl"
+			(offset
+				(xyz 0 0 0)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz 0 0 0)
+			)
+		)
+	)
+	(footprint "Switch_Keyboard_Hotswap_Kailh:SW_Hotswap_Kailh_Choc_V1V2_hole"
+		(layer "B.Cu")
+		(uuid "5fb16bb7-4332-42f8-8551-264e21d05df5")
+		(at 88.1 105.245)
+		(descr "Kailh Choc keyswitch V1V2 CPG1350 V1 CPG1353 V2 Hotswap")
+		(tags "Kailh Choc Keyswitch Switch CPG1350 V1 CPG1353 V2 Hotswap Cutout")
+		(property "Reference" "SW5"
+			(at 0 9 0)
+			(layer "B.SilkS")
+			(hide yes)
+			(uuid "09119d81-8435-41c9-b843-087bdbb277c0")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Value" "SW_PUSH"
+			(at 0 -9 0)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "870b76e8-c01d-418c-bd79-b1381c102d44")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Footprint" "Switch_Keyboard_Hotswap_Kailh:SW_Hotswap_Kailh_Choc_V1V2_hole"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "1ebe6696-396d-4286-8796-75ceec8ba210")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "152917e6-d6d2-4771-b5de-91e24cc41a0e")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Description" ""
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "83a3edca-76f9-4494-ba46-0805a0beb0ea")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(attr smd)
+		(fp_line
+			(start -7.6 -7.6)
+			(end -7.6 7.6)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "Edge.Cuts")
+			(uuid "b3fa799c-a97e-4947-ad7e-840fd6d67f1a")
+		)
+		(fp_line
+			(start -7.6 7.6)
+			(end 7.6 7.6)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "Edge.Cuts")
+			(uuid "dc539cb6-4256-4a46-b956-81b92000a5ea")
+		)
+		(fp_line
+			(start 7.6 -7.6)
+			(end -7.6 -7.6)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "Edge.Cuts")
+			(uuid "95d6d6ba-eac7-4fe8-86e0-fa153cf46adb")
+		)
+		(fp_line
+			(start 7.6 7.6)
+			(end 7.6 -7.6)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "Edge.Cuts")
+			(uuid "3f24cd6a-b8a7-48a1-a2c7-a0ea2b8d50ec")
+		)
+		(fp_line
+			(start -7.75 -7.75)
+			(end -7.75 7.75)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "B.CrtYd")
+			(uuid "e5b637d4-4a5e-461a-ae65-542aa691854b")
+		)
+		(fp_line
+			(start -7.75 7.75)
+			(end 7.75 7.75)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "B.CrtYd")
+			(uuid "9cf446a2-9e8c-4749-9ff8-6caaf55fb213")
+		)
+		(fp_line
+			(start 7.75 -7.75)
+			(end -7.75 -7.75)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "B.CrtYd")
+			(uuid "7f8768ae-3a30-49d8-a198-313175ead13e")
+		)
+		(fp_line
+			(start 7.75 7.75)
+			(end 7.75 -7.75)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "B.CrtYd")
+			(uuid "e686cb6d-2d49-4490-bf8a-20e37d2754ce")
+		)
+		(model "${KICAD6_3RD_PARTY}/3dmodels/com_github_perigoso_keyswitch-kicad-library/3d-library.3dshapes/SW_Hotswap_Kailh_Choc_V1.wrl"
+			(offset
+				(xyz 0 0 0)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz 0 0 0)
+			)
+		)
+	)
+	(footprint "Switch_Keyboard_Hotswap_Kailh:SW_Hotswap_Kailh_Choc_V1V2_hole"
+		(layer "B.Cu")
+		(uuid "681af5d6-d0be-4267-8289-6da1ca28ab86")
+		(at 69.05 69.05)
+		(descr "Kailh Choc keyswitch V1V2 CPG1350 V1 CPG1353 V2 Hotswap")
+		(tags "Kailh Choc Keyswitch Switch CPG1350 V1 CPG1353 V2 Hotswap Cutout")
+		(property "Reference" "SW5"
+			(at 0 9 0)
+			(layer "B.SilkS")
+			(hide yes)
+			(uuid "f9af53f6-2d63-4634-b463-587e9187a269")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Value" "SW_PUSH"
+			(at 0 -9 0)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "3e1e429a-ac3d-4bad-9fa0-75362e0b96b6")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Footprint" "Switch_Keyboard_Hotswap_Kailh:SW_Hotswap_Kailh_Choc_V1V2_hole"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "74a41c1c-0f5f-4bcd-a931-b549916609e8")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "9a93bb14-d04a-4aed-befc-a945e705c70c")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Description" ""
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "846e58cc-c7fb-4135-aaa3-b66dae62b487")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(attr smd)
+		(fp_line
+			(start -7.6 -7.6)
+			(end -7.6 7.6)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "Edge.Cuts")
+			(uuid "17ab27b2-d8f1-4bd5-953c-03c8a844cea1")
+		)
+		(fp_line
+			(start -7.6 7.6)
+			(end 7.6 7.6)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "Edge.Cuts")
+			(uuid "d78fb2a5-43f6-4449-bc00-5e9ad012630d")
+		)
+		(fp_line
+			(start 7.6 -7.6)
+			(end -7.6 -7.6)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "Edge.Cuts")
+			(uuid "092609ea-05be-44ce-a92f-05023e6a0a70")
+		)
+		(fp_line
+			(start 7.6 7.6)
+			(end 7.6 -7.6)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "Edge.Cuts")
+			(uuid "4b5f7a3c-bd43-4f3d-9d90-77e9b50682d5")
+		)
+		(fp_line
+			(start -7.75 -7.75)
+			(end -7.75 7.75)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "B.CrtYd")
+			(uuid "21b2ec9f-ffbc-4931-bc28-940da94e050a")
+		)
+		(fp_line
+			(start -7.75 7.75)
+			(end 7.75 7.75)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "B.CrtYd")
+			(uuid "5ef6365d-e58a-42d6-8bdd-3bd19a6a708f")
+		)
+		(fp_line
+			(start 7.75 -7.75)
+			(end -7.75 -7.75)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "B.CrtYd")
+			(uuid "305712b0-72c5-4b26-bcde-77f96446491b")
+		)
+		(fp_line
+			(start 7.75 7.75)
+			(end 7.75 -7.75)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "B.CrtYd")
+			(uuid "00175b35-da47-40c7-956e-0f5550e9369d")
+		)
+		(model "${KICAD6_3RD_PARTY}/3dmodels/com_github_perigoso_keyswitch-kicad-library/3d-library.3dshapes/SW_Hotswap_Kailh_Choc_V1.wrl"
+			(offset
+				(xyz 0 0 0)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz 0 0 0)
+			)
+		)
+	)
+	(footprint "Switch_Keyboard_Hotswap_Kailh:SW_Hotswap_Kailh_Choc_V1V2_hole"
+		(layer "B.Cu")
+		(uuid "7b886bf9-c733-4bf4-ba09-5b4992b0b784")
+		(at 107.15 82.385)
+		(descr "Kailh Choc keyswitch V1V2 CPG1350 V1 CPG1353 V2 Hotswap")
+		(tags "Kailh Choc Keyswitch Switch CPG1350 V1 CPG1353 V2 Hotswap Cutout")
+		(property "Reference" "SW5"
+			(at 0 9 0)
+			(layer "B.SilkS")
+			(hide yes)
+			(uuid "343bd549-cec4-4e53-8a5d-dfd9cc5abca8")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Value" "SW_PUSH"
+			(at 0 -9 0)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "d813d688-9cc2-44a7-ad81-1107603f85e3")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Footprint" "Switch_Keyboard_Hotswap_Kailh:SW_Hotswap_Kailh_Choc_V1V2_hole"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "ca8013ff-6bef-4111-ba98-74c3907a4a14")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "f5018c61-11f5-4be7-b497-e9de035b1496")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Description" ""
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "2068ab24-d31a-4dc4-9085-dabcc1cd1440")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(attr smd)
+		(fp_line
+			(start -7.6 -7.6)
+			(end -7.6 7.6)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "Edge.Cuts")
+			(uuid "6d7e365d-eb46-43e7-9aca-9ba51ccae06f")
+		)
+		(fp_line
+			(start -7.6 7.6)
+			(end 7.6 7.6)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "Edge.Cuts")
+			(uuid "f7ea3bce-1cfc-40a9-9a2f-c6decde5d2da")
+		)
+		(fp_line
+			(start 7.6 -7.6)
+			(end -7.6 -7.6)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "Edge.Cuts")
+			(uuid "018863e8-0cd6-4510-860f-d8e423b3393a")
+		)
+		(fp_line
+			(start 7.6 7.6)
+			(end 7.6 -7.6)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "Edge.Cuts")
+			(uuid "1cf978ec-7e52-4ac5-9b80-4b31054f35cf")
+		)
+		(fp_line
+			(start -7.75 -7.75)
+			(end -7.75 7.75)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "B.CrtYd")
+			(uuid "f638643a-a7e8-49a7-a988-56346b9849d1")
+		)
+		(fp_line
+			(start -7.75 7.75)
+			(end 7.75 7.75)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "B.CrtYd")
+			(uuid "0372eb8d-5436-4c4d-b35e-46c593f8e734")
+		)
+		(fp_line
+			(start 7.75 -7.75)
+			(end -7.75 -7.75)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "B.CrtYd")
+			(uuid "f7017b2a-04e1-4f13-baa1-7c9d23f5f442")
+		)
+		(fp_line
+			(start 7.75 7.75)
+			(end 7.75 -7.75)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "B.CrtYd")
+			(uuid "50cb7502-fde2-4f29-8304-34711f2f74d6")
+		)
+		(model "${KICAD6_3RD_PARTY}/3dmodels/com_github_perigoso_keyswitch-kicad-library/3d-library.3dshapes/SW_Hotswap_Kailh_Choc_V1.wrl"
+			(offset
+				(xyz 0 0 0)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz 0 0 0)
+			)
+		)
+	)
+	(footprint "Switch_Keyboard_Hotswap_Kailh:SW_Hotswap_Kailh_Choc_V1V2_hole"
+		(layer "B.Cu")
+		(uuid "7dbc82c3-7d37-46fc-b4e1-6338b0977355")
+		(at 145.25 70.955)
+		(descr "Kailh Choc keyswitch V1V2 CPG1350 V1 CPG1353 V2 Hotswap")
+		(tags "Kailh Choc Keyswitch Switch CPG1350 V1 CPG1353 V2 Hotswap Cutout")
+		(property "Reference" "SW5"
+			(at 0 9 0)
+			(layer "B.SilkS")
+			(hide yes)
+			(uuid "c9abf361-c877-4437-a9c3-3c480ae7fd94")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Value" "SW_PUSH"
+			(at 0 -9 0)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "9e9d048e-f864-4e57-96fa-22702da8dfe9")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Footprint" "Switch_Keyboard_Hotswap_Kailh:SW_Hotswap_Kailh_Choc_V1V2_hole"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "c8105ffa-fd59-49c0-a6d9-51595fafe77a")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "53679b59-6851-448c-a73b-23bf204245a4")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Description" ""
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "40c22161-74b8-48ef-942f-025b6c55f5c9")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(attr smd)
+		(fp_line
+			(start -7.6 -7.6)
+			(end -7.6 7.6)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "Edge.Cuts")
+			(uuid "a48b81b7-e33b-4f9c-8047-dd98645e9462")
+		)
+		(fp_line
+			(start -7.6 7.6)
+			(end 7.6 7.6)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "Edge.Cuts")
+			(uuid "ac180201-f15d-4124-b78f-539021cbad49")
+		)
+		(fp_line
+			(start 7.6 -7.6)
+			(end -7.6 -7.6)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "Edge.Cuts")
+			(uuid "9e9664c2-0562-4b76-9e08-fcf68be4955a")
+		)
+		(fp_line
+			(start 7.6 7.6)
+			(end 7.6 -7.6)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "Edge.Cuts")
+			(uuid "4fb3d18b-49e1-4686-b2f2-07556ac7c785")
+		)
+		(fp_line
+			(start -7.75 -7.75)
+			(end -7.75 7.75)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "B.CrtYd")
+			(uuid "d69ab3c7-db70-4312-b813-f8bf32943b63")
+		)
+		(fp_line
+			(start -7.75 7.75)
+			(end 7.75 7.75)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "B.CrtYd")
+			(uuid "46558123-2421-45b5-a63f-9dc33caac883")
+		)
+		(fp_line
+			(start 7.75 -7.75)
+			(end -7.75 -7.75)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "B.CrtYd")
+			(uuid "aa93f501-3b59-48f0-858e-636f01a11e37")
+		)
+		(fp_line
+			(start 7.75 7.75)
+			(end 7.75 -7.75)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "B.CrtYd")
+			(uuid "67fb41d6-2d40-4e05-9920-2a36e70d685f")
+		)
+		(model "${KICAD6_3RD_PARTY}/3dmodels/com_github_perigoso_keyswitch-kicad-library/3d-library.3dshapes/SW_Hotswap_Kailh_Choc_V1.wrl"
+			(offset
+				(xyz 0 0 0)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz 0 0 0)
+			)
+		)
+	)
+	(footprint "Switch_Keyboard_Hotswap_Kailh:SW_Hotswap_Kailh_Choc_V1V2_hole"
+		(layer "B.Cu")
+		(uuid "82e68c5f-8dfa-44dd-893a-e0f3ab5ee2c0")
+		(at 147 134.2 -20)
+		(descr "Kailh Choc keyswitch V1V2 CPG1350 V1 CPG1353 V2 Hotswap")
+		(tags "Kailh Choc Keyswitch Switch CPG1350 V1 CPG1353 V2 Hotswap Cutout")
+		(property "Reference" "SW22"
+			(at 0 9 -20)
+			(layer "B.SilkS")
+			(hide yes)
+			(uuid "47d16280-9a4c-4d6a-8f98-e92b0056837c")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Value" "SW_PUSH"
+			(at 0 -9 -20)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "130a6655-5ba4-43ea-8643-087ef3e01e6c")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Footprint" "Switch_Keyboard_Hotswap_Kailh:SW_Hotswap_Kailh_Choc_V1V2_hole"
+			(at 0 0 160)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "f73d06a7-9abf-49b8-90b1-f8dc66c97c6c")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 160)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "47482357-6667-4482-86f9-547dc897b815")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Description" ""
+			(at 0 0 160)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "54bd3aca-eca0-433f-94f2-695f99fd5d05")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(attr smd)
+		(fp_line
+			(start -7.6 7.6)
+			(end 7.6 7.6)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "Edge.Cuts")
+			(uuid "32c803f2-cf5c-4b6d-b420-da2a767ada22")
+		)
+		(fp_line
+			(start -7.6 -7.6)
+			(end -7.6 7.6)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "Edge.Cuts")
+			(uuid "bb76b2ed-d4cc-4777-b74d-436dd17dd43a")
+		)
+		(fp_line
+			(start 7.6 7.6)
+			(end 7.6 -7.6)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "Edge.Cuts")
+			(uuid "cc414ccd-72ae-4ec3-adb4-12f112517698")
+		)
+		(fp_line
+			(start 7.6 -7.6)
+			(end -7.6 -7.6)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "Edge.Cuts")
+			(uuid "0ec8225b-e1ac-47b5-b2f7-ac1b25733071")
+		)
+		(fp_line
+			(start -7.75 7.75)
+			(end 7.75 7.75)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "B.CrtYd")
+			(uuid "b119be21-4169-4bdf-b001-751f6655cdba")
+		)
+		(fp_line
+			(start -7.75 -7.75)
+			(end -7.75 7.75)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "B.CrtYd")
+			(uuid "b66737cf-7ba3-460a-84bc-8056a78ea048")
+		)
+		(fp_line
+			(start 7.75 7.75)
+			(end 7.75 -7.75)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "B.CrtYd")
+			(uuid "1907921e-0ca2-43cb-aad8-301230113b18")
+		)
+		(fp_line
+			(start 7.75 -7.75)
+			(end -7.75 -7.75)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "B.CrtYd")
+			(uuid "8e0898d9-c750-4952-a358-ab2e120761b8")
+		)
+		(model "${KICAD6_3RD_PARTY}/3dmodels/com_github_perigoso_keyswitch-kicad-library/3d-library.3dshapes/SW_Hotswap_Kailh_Choc_V1.wrl"
+			(offset
+				(xyz 0 0 0)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz 0 0 0)
+			)
+		)
+	)
+	(footprint "Switch_Keyboard_Hotswap_Kailh:SW_Hotswap_Kailh_Choc_V1V2_hole"
+		(layer "B.Cu")
+		(uuid "87699f18-2afb-4090-8f59-d0a4d5c4593a")
+		(at 107.15 127.1)
+		(descr "Kailh Choc keyswitch V1V2 CPG1350 V1 CPG1353 V2 Hotswap")
+		(tags "Kailh Choc Keyswitch Switch CPG1350 V1 CPG1353 V2 Hotswap Cutout")
+		(property "Reference" "SW14"
+			(at 0 9 0)
+			(layer "B.SilkS")
+			(hide yes)
+			(uuid "a1f8117c-45e0-4541-acc6-b22230eeaf69")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Value" "SW_PUSH"
+			(at 0 -9 0)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "d1848c2d-a789-4a57-b818-fc32fcaa5208")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Footprint" "Switch_Keyboard_Hotswap_Kailh:SW_Hotswap_Kailh_Choc_V1V2_hole"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "72af0071-6497-4a44-baca-f7c92cff5b76")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "c1c8b03a-1ec8-4a66-81dd-a4a6e4bfb633")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Description" ""
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "0bb374a8-a35a-40ad-b039-ad5e98228908")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(attr smd)
+		(fp_line
+			(start -7.6 -7.6)
+			(end -7.6 7.6)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "Edge.Cuts")
+			(uuid "9e6669eb-a9b6-4f7a-b143-b1ae57fb0a35")
+		)
+		(fp_line
+			(start -7.6 7.6)
+			(end 7.6 7.6)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "Edge.Cuts")
+			(uuid "2d826241-9644-4c9a-8968-bf057a741a33")
+		)
+		(fp_line
+			(start 7.6 -7.6)
+			(end -7.6 -7.6)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "Edge.Cuts")
+			(uuid "1829abbb-22fb-4d56-9a5f-8c52198ef70a")
+		)
+		(fp_line
+			(start 7.6 7.6)
+			(end 7.6 -7.6)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "Edge.Cuts")
+			(uuid "a51e93ba-7177-424c-b5bc-04bc3a944f1e")
+		)
+		(fp_line
+			(start -7.75 -7.75)
+			(end -7.75 7.75)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "B.CrtYd")
+			(uuid "af60ac92-30a0-47e2-a608-64a98b3a18dc")
+		)
+		(fp_line
+			(start -7.75 7.75)
+			(end 7.75 7.75)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "B.CrtYd")
+			(uuid "75cd8ef6-1e29-4b1a-a2bb-462b02860726")
+		)
+		(fp_line
+			(start 7.75 -7.75)
+			(end -7.75 -7.75)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "B.CrtYd")
+			(uuid "ad8f5564-14cb-4473-94a6-e412584e2c8e")
+		)
+		(fp_line
+			(start 7.75 7.75)
+			(end 7.75 -7.75)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "B.CrtYd")
+			(uuid "0ded8e55-d95d-40f0-ac2f-06fb4a8eda50")
+		)
+		(model "${KICAD6_3RD_PARTY}/3dmodels/com_github_perigoso_keyswitch-kicad-library/3d-library.3dshapes/SW_Hotswap_Kailh_Choc_V1.wrl"
+			(offset
+				(xyz 0 0 0)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz 0 0 0)
+			)
+		)
+	)
+	(footprint "Switch_Keyboard_Hotswap_Kailh:SW_Hotswap_Kailh_Choc_V1V2_hole"
+		(layer "B.Cu")
+		(uuid "9930c0ba-4ad2-431b-b2b4-275784cd469e")
+		(at 107.15 101.435)
+		(descr "Kailh Choc keyswitch V1V2 CPG1350 V1 CPG1353 V2 Hotswap")
+		(tags "Kailh Choc Keyswitch Switch CPG1350 V1 CPG1353 V2 Hotswap Cutout")
+		(property "Reference" "SW5"
+			(at 0 9 0)
+			(layer "B.SilkS")
+			(hide yes)
+			(uuid "9400bc98-8a39-4669-889e-703732f593da")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Value" "SW_PUSH"
+			(at 0 -9 0)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "4195394d-0f3d-4af8-ba54-6ea97222d86b")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Footprint" "Switch_Keyboard_Hotswap_Kailh:SW_Hotswap_Kailh_Choc_V1V2_hole"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "9ee0ef19-349f-44e0-a1da-d9ecf3c5957b")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "debd0c44-27a1-4d65-a172-3fc2f01a4c1a")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Description" ""
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "d2cb2895-7ddf-4f9a-b3c4-95c238d7b4c1")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(attr smd)
+		(fp_line
+			(start -7.6 -7.6)
+			(end -7.6 7.6)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "Edge.Cuts")
+			(uuid "c52f3329-cac3-49ce-b898-525468d83d40")
+		)
+		(fp_line
+			(start -7.6 7.6)
+			(end 7.6 7.6)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "Edge.Cuts")
+			(uuid "4fa68952-6d38-41f4-9c58-e425de03c80b")
+		)
+		(fp_line
+			(start 7.6 -7.6)
+			(end -7.6 -7.6)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "Edge.Cuts")
+			(uuid "f4a8f7f2-6ed7-46f8-adf7-e4230fb6fd90")
+		)
+		(fp_line
+			(start 7.6 7.6)
+			(end 7.6 -7.6)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "Edge.Cuts")
+			(uuid "205e7466-97bc-4533-b341-81019e905a35")
+		)
+		(fp_line
+			(start -7.75 -7.75)
+			(end -7.75 7.75)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "B.CrtYd")
+			(uuid "d2201d9b-839c-40f5-9825-1e9ef08ee02c")
+		)
+		(fp_line
+			(start -7.75 7.75)
+			(end 7.75 7.75)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "B.CrtYd")
+			(uuid "002097b1-6d6b-43bf-8f4a-3954241c745c")
+		)
+		(fp_line
+			(start 7.75 -7.75)
+			(end -7.75 -7.75)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "B.CrtYd")
+			(uuid "8ec63259-fcd3-4f82-b6a2-72db50fa6dbb")
+		)
+		(fp_line
+			(start 7.75 7.75)
+			(end 7.75 -7.75)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "B.CrtYd")
+			(uuid "0d6e4ffa-61ef-451c-a855-7a1daa2334bd")
+		)
+		(model "${KICAD6_3RD_PARTY}/3dmodels/com_github_perigoso_keyswitch-kicad-library/3d-library.3dshapes/SW_Hotswap_Kailh_Choc_V1.wrl"
+			(offset
+				(xyz 0 0 0)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz 0 0 0)
+			)
+		)
+	)
+	(footprint "Switch_Keyboard_Hotswap_Kailh:SW_Hotswap_Kailh_Choc_V1V2_hole"
+		(layer "B.Cu")
+		(uuid "a126a989-2cb3-4329-a603-cb7440b6a287")
+		(at 50 107.15)
+		(descr "Kailh Choc keyswitch V1V2 CPG1350 V1 CPG1353 V2 Hotswap")
+		(tags "Kailh Choc Keyswitch Switch CPG1350 V1 CPG1353 V2 Hotswap Cutout")
+		(property "Reference" "SW5"
+			(at 0 9 0)
+			(layer "B.SilkS")
+			(hide yes)
+			(uuid "b10e668c-0a65-4b03-8ba6-1eb27972d33d")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Value" "SW_PUSH"
+			(at 0 -9 0)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "0814849a-a359-4071-8e10-f021c2e24a5c")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Footprint" "Switch_Keyboard_Hotswap_Kailh:SW_Hotswap_Kailh_Choc_V1V2_hole"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "0b742713-4276-4a4c-89f0-58e980ab057c")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "4c45ea95-ef29-43af-b840-f930882579b5")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Description" ""
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "1939e216-e317-45b5-8016-a21af94720a3")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(attr smd)
+		(fp_line
+			(start -7.6 -7.6)
+			(end -7.6 7.6)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "Edge.Cuts")
+			(uuid "99b25ebe-774f-4a5a-b0a1-ff9c9416baae")
+		)
+		(fp_line
+			(start -7.6 7.6)
+			(end 7.6 7.6)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "Edge.Cuts")
+			(uuid "bb120522-ba04-4f3f-b3ed-03794d8a51ff")
+		)
+		(fp_line
+			(start 7.6 -7.6)
+			(end -7.6 -7.6)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "Edge.Cuts")
+			(uuid "d2d05c46-8059-40bc-a319-3d3e75d557dc")
+		)
+		(fp_line
+			(start 7.6 7.6)
+			(end 7.6 -7.6)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "Edge.Cuts")
+			(uuid "d9f03357-956b-4743-85ce-105d877386e8")
+		)
+		(fp_line
+			(start -7.75 -7.75)
+			(end -7.75 7.75)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "B.CrtYd")
+			(uuid "a4f4b472-159a-41bb-bfd4-95994649b2f1")
+		)
+		(fp_line
+			(start -7.75 7.75)
+			(end 7.75 7.75)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "B.CrtYd")
+			(uuid "6674002a-9c0d-48f2-bba1-ceeb2627f2e5")
+		)
+		(fp_line
+			(start 7.75 -7.75)
+			(end -7.75 -7.75)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "B.CrtYd")
+			(uuid "9f0d397d-4c88-4f30-be0b-54ba260c212e")
+		)
+		(fp_line
+			(start 7.75 7.75)
+			(end 7.75 -7.75)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "B.CrtYd")
+			(uuid "2dd01b3e-7e43-4958-8018-38429846e782")
+		)
+		(model "${KICAD6_3RD_PARTY}/3dmodels/com_github_perigoso_keyswitch-kicad-library/3d-library.3dshapes/SW_Hotswap_Kailh_Choc_V1.wrl"
+			(offset
+				(xyz 0 0 0)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz 0 0 0)
+			)
+		)
+	)
+	(footprint "Switch_Keyboard_Hotswap_Kailh:SW_Hotswap_Kailh_Choc_V1V2_hole"
+		(layer "B.Cu")
+		(uuid "d4047b57-658a-4360-9e8d-e874f3ac799a")
+		(at 145.25 90.005)
+		(descr "Kailh Choc keyswitch V1V2 CPG1350 V1 CPG1353 V2 Hotswap")
+		(tags "Kailh Choc Keyswitch Switch CPG1350 V1 CPG1353 V2 Hotswap Cutout")
+		(property "Reference" "SW5"
+			(at 0 9 0)
+			(layer "B.SilkS")
+			(hide yes)
+			(uuid "2cba4291-b19c-498c-a71f-a82bcbeab01b")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Value" "SW_PUSH"
+			(at 0 -9 0)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "a8a1ea5f-9dce-4af7-83d4-2be7f0dcb9b7")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Footprint" "Switch_Keyboard_Hotswap_Kailh:SW_Hotswap_Kailh_Choc_V1V2_hole"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "c1e51cb4-06b2-4d44-a04b-7022a7cf4ad5")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "3c1a7d06-db78-4390-92f0-ffea844b7eb2")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Description" ""
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "91b50a76-d106-4eee-a673-769c47b4fb0d")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(attr smd)
+		(fp_line
+			(start -7.6 -7.6)
+			(end -7.6 7.6)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "Edge.Cuts")
+			(uuid "3bb70842-6e2e-44cd-8000-010870efe32e")
+		)
+		(fp_line
+			(start -7.6 7.6)
+			(end 7.6 7.6)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "Edge.Cuts")
+			(uuid "97ae0441-3721-4452-9368-ae568028eeb9")
+		)
+		(fp_line
+			(start 7.6 -7.6)
+			(end -7.6 -7.6)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "Edge.Cuts")
+			(uuid "88795ea9-ac15-4949-995d-40278d88699e")
+		)
+		(fp_line
+			(start 7.6 7.6)
+			(end 7.6 -7.6)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "Edge.Cuts")
+			(uuid "8a3c8b2c-dfd5-4d79-b13e-064607fe1536")
+		)
+		(fp_line
+			(start -7.75 -7.75)
+			(end -7.75 7.75)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "B.CrtYd")
+			(uuid "729a72e5-4dce-43a8-ba8c-a90b1e619415")
+		)
+		(fp_line
+			(start -7.75 7.75)
+			(end 7.75 7.75)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "B.CrtYd")
+			(uuid "518d0033-7d43-41ad-930a-15c00978a4c4")
+		)
+		(fp_line
+			(start 7.75 -7.75)
+			(end -7.75 -7.75)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "B.CrtYd")
+			(uuid "91a1b625-a463-412f-9de7-f27935459cef")
+		)
+		(fp_line
+			(start 7.75 7.75)
+			(end 7.75 -7.75)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "B.CrtYd")
+			(uuid "e295e76c-cef5-4260-882e-8ccbd0d12289")
+		)
+		(model "${KICAD6_3RD_PARTY}/3dmodels/com_github_perigoso_keyswitch-kicad-library/3d-library.3dshapes/SW_Hotswap_Kailh_Choc_V1.wrl"
+			(offset
+				(xyz 0 0 0)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz 0 0 0)
+			)
+		)
+	)
+	(footprint "Switch_Keyboard_Hotswap_Kailh:SW_Hotswap_Kailh_Choc_V1V2_hole"
+		(layer "B.Cu")
+		(uuid "e2587055-6aa5-49e5-b57c-f94ce5ce48ac")
+		(at 164.3 93.815)
+		(descr "Kailh Choc keyswitch V1V2 CPG1350 V1 CPG1353 V2 Hotswap")
+		(tags "Kailh Choc Keyswitch Switch CPG1350 V1 CPG1353 V2 Hotswap Cutout")
+		(property "Reference" "SW5"
+			(at 0 9 0)
+			(layer "B.SilkS")
+			(hide yes)
+			(uuid "1b0e5de0-52f6-4ab7-b0d7-f1bf9c4ea1a6")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Value" "SW_PUSH"
+			(at 0 -9 0)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "c3071895-2354-425d-90c0-b85edec64f14")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Footprint" "Switch_Keyboard_Hotswap_Kailh:SW_Hotswap_Kailh_Choc_V1V2_hole"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "373c709a-3aa0-4173-a853-a5a8930e61c6")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "8e509333-31f0-4258-af19-004c6705f60f")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Description" ""
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "efac74b0-4e75-4c4c-b019-d3e4512f5fe3")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(attr smd)
+		(fp_line
+			(start -7.6 -7.6)
+			(end -7.6 7.6)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "Edge.Cuts")
+			(uuid "05cda2d8-5d34-4508-b8d6-e259b8928689")
+		)
+		(fp_line
+			(start -7.6 7.6)
+			(end 7.6 7.6)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "Edge.Cuts")
+			(uuid "811b3104-d7ef-4d67-be61-35b2afec1245")
+		)
+		(fp_line
+			(start 7.6 -7.6)
+			(end -7.6 -7.6)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "Edge.Cuts")
+			(uuid "48f53a4b-d9a3-408b-a3f9-05e98e4d683c")
+		)
+		(fp_line
+			(start 7.6 7.6)
+			(end 7.6 -7.6)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "Edge.Cuts")
+			(uuid "87883038-2086-4457-9ce0-da9452b96543")
+		)
+		(fp_line
+			(start -7.75 -7.75)
+			(end -7.75 7.75)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "B.CrtYd")
+			(uuid "1cec8732-9321-4876-915d-0c10a11501bc")
+		)
+		(fp_line
+			(start -7.75 7.75)
+			(end 7.75 7.75)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "B.CrtYd")
+			(uuid "4ce83f20-084a-4e3a-aa13-f85e48640172")
+		)
+		(fp_line
+			(start 7.75 -7.75)
+			(end -7.75 -7.75)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "B.CrtYd")
+			(uuid "371df816-177a-4779-af75-770ad0035b86")
+		)
+		(fp_line
+			(start 7.75 7.75)
+			(end 7.75 -7.75)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "B.CrtYd")
+			(uuid "3a97f201-8bee-40e6-b7e7-05acbc8ea6c5")
+		)
+		(model "${KICAD6_3RD_PARTY}/3dmodels/com_github_perigoso_keyswitch-kicad-library/3d-library.3dshapes/SW_Hotswap_Kailh_Choc_V1.wrl"
+			(offset
+				(xyz 0 0 0)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz 0 0 0)
+			)
+		)
+	)
+	(footprint "Switch_Keyboard_Hotswap_Kailh:SW_Hotswap_Kailh_Choc_V1V2_hole"
+		(layer "B.Cu")
+		(uuid "e9911bd3-26e7-4b2f-a0db-779ece935b36")
+		(at 107.15 63.335)
+		(descr "Kailh Choc keyswitch V1V2 CPG1350 V1 CPG1353 V2 Hotswap")
+		(tags "Kailh Choc Keyswitch Switch CPG1350 V1 CPG1353 V2 Hotswap Cutout")
+		(property "Reference" "SW5"
+			(at 0 9 0)
+			(layer "B.SilkS")
+			(hide yes)
+			(uuid "57a5e66d-93eb-418d-9410-aff4ed54ff30")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Value" "SW_PUSH"
+			(at 0 -9 0)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "bfdde23f-35bb-40d9-ad10-8a529a69d6a4")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Footprint" "Switch_Keyboard_Hotswap_Kailh:SW_Hotswap_Kailh_Choc_V1V2_hole"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "5925f64e-8451-4fe5-8a07-256576a04849")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "de9d5d99-6225-4ac9-b4b9-de9accb074d3")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Description" ""
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "92b2fa49-d61a-4e8b-aec5-2035e9fc5b73")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(attr smd)
+		(fp_line
+			(start -7.6 -7.6)
+			(end -7.6 7.6)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "Edge.Cuts")
+			(uuid "62f43798-6c83-4008-9fde-dfeb0ccdfa15")
+		)
+		(fp_line
+			(start -7.6 7.6)
+			(end 7.6 7.6)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "Edge.Cuts")
+			(uuid "fa447dc6-c5ea-4c24-b9af-5d1496286967")
+		)
+		(fp_line
+			(start 7.6 -7.6)
+			(end -7.6 -7.6)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "Edge.Cuts")
+			(uuid "54c7cf8b-ad2d-4dc3-b2ad-dc8c28d010e9")
+		)
+		(fp_line
+			(start 7.6 7.6)
+			(end 7.6 -7.6)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "Edge.Cuts")
+			(uuid "71ba8588-3310-4746-978f-06f0ea04e8ce")
+		)
+		(fp_line
+			(start -7.75 -7.75)
+			(end -7.75 7.75)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "B.CrtYd")
+			(uuid "06da5658-2e90-4078-b639-0335f8245356")
+		)
+		(fp_line
+			(start -7.75 7.75)
+			(end 7.75 7.75)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "B.CrtYd")
+			(uuid "f397676d-5dbc-4201-99d4-56443f26ac3d")
+		)
+		(fp_line
+			(start 7.75 -7.75)
+			(end -7.75 -7.75)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "B.CrtYd")
+			(uuid "6b4fd444-880e-49f0-8020-f92ef180503b")
+		)
+		(fp_line
+			(start 7.75 7.75)
+			(end 7.75 -7.75)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "B.CrtYd")
+			(uuid "a3d2709e-72bd-43a4-bed6-043c19fcdad3")
+		)
+		(model "${KICAD6_3RD_PARTY}/3dmodels/com_github_perigoso_keyswitch-kicad-library/3d-library.3dshapes/SW_Hotswap_Kailh_Choc_V1.wrl"
+			(offset
+				(xyz 0 0 0)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz 0 0 0)
+			)
+		)
+	)
+	(footprint "Switch_Keyboard_Hotswap_Kailh:SW_Hotswap_Kailh_Choc_V1V2_hole"
+		(layer "B.Cu")
+		(uuid "ec5882df-0e56-416f-95c4-ac5e26841f1b")
+		(at 88.1 86.195)
+		(descr "Kailh Choc keyswitch V1V2 CPG1350 V1 CPG1353 V2 Hotswap")
+		(tags "Kailh Choc Keyswitch Switch CPG1350 V1 CPG1353 V2 Hotswap Cutout")
+		(property "Reference" "SW5"
+			(at 0 9 0)
+			(layer "B.SilkS")
+			(hide yes)
+			(uuid "a56fd985-87a0-4685-9207-8d47e3fd874b")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Value" "SW_PUSH"
+			(at 0 -9 0)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "7eaeda3f-9525-4efe-babb-14a744390970")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Footprint" "Switch_Keyboard_Hotswap_Kailh:SW_Hotswap_Kailh_Choc_V1V2_hole"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "f363f464-7ef7-49b1-bb72-a07e6504d409")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "38d1a17c-2a12-403c-8eed-dd9e71cad61e")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Description" ""
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "cacbd4d1-769e-4a31-bdc8-cb381fbc2cf2")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(attr smd)
+		(fp_line
+			(start -7.6 -7.6)
+			(end -7.6 7.6)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "Edge.Cuts")
+			(uuid "ab6fbd1e-e2d6-4cda-90dc-f248863d864b")
+		)
+		(fp_line
+			(start -7.6 7.6)
+			(end 7.6 7.6)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "Edge.Cuts")
+			(uuid "c0a33706-a169-44fb-9451-de76d176f60f")
+		)
+		(fp_line
+			(start 7.6 -7.6)
+			(end -7.6 -7.6)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "Edge.Cuts")
+			(uuid "de031cd2-aab1-4796-9a7c-8917891ac397")
+		)
+		(fp_line
+			(start 7.6 7.6)
+			(end 7.6 -7.6)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "Edge.Cuts")
+			(uuid "cfc0a229-8767-4c17-9891-90c43c744bd3")
+		)
+		(fp_line
+			(start -7.75 -7.75)
+			(end -7.75 7.75)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "B.CrtYd")
+			(uuid "a7f512a8-5151-4f00-b32b-557c1d306a47")
+		)
+		(fp_line
+			(start -7.75 7.75)
+			(end 7.75 7.75)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "B.CrtYd")
+			(uuid "2941dd78-4448-4b39-8a7e-4e2f1c0135ad")
+		)
+		(fp_line
+			(start 7.75 -7.75)
+			(end -7.75 -7.75)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "B.CrtYd")
+			(uuid "1163ff07-aa4c-4a90-9a73-183ef1ed97a8")
+		)
+		(fp_line
+			(start 7.75 7.75)
+			(end 7.75 -7.75)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "B.CrtYd")
+			(uuid "448eceff-1e1e-4fa1-9383-b126f40fc9d2")
+		)
+		(model "${KICAD6_3RD_PARTY}/3dmodels/com_github_perigoso_keyswitch-kicad-library/3d-library.3dshapes/SW_Hotswap_Kailh_Choc_V1.wrl"
+			(offset
+				(xyz 0 0 0)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz 0 0 0)
+			)
+		)
+	)
+	(footprint "Switch_Keyboard_Hotswap_Kailh:SW_Hotswap_Kailh_Choc_V1V2_hole"
+		(layer "B.Cu")
+		(uuid "f8e0347c-0063-4b31-af5c-be1538673e26")
+		(at 50 88.1)
+		(descr "Kailh Choc keyswitch V1V2 CPG1350 V1 CPG1353 V2 Hotswap")
+		(tags "Kailh Choc Keyswitch Switch CPG1350 V1 CPG1353 V2 Hotswap Cutout")
+		(property "Reference" "SW5"
+			(at 0 9 0)
+			(layer "B.SilkS")
+			(hide yes)
+			(uuid "9d9cedc7-0c2d-4c55-8060-b4fb48b84a55")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Value" "SW_PUSH"
+			(at 0 -9 0)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "82944ef7-a95e-4b20-95e7-6f80e19b8156")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Footprint" "Switch_Keyboard_Hotswap_Kailh:SW_Hotswap_Kailh_Choc_V1V2_hole"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "993bcbbd-2d8a-4261-85f4-600be087fc17")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "80c49977-2cde-4116-a48b-6d2665ad29cc")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Description" ""
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "07145bf9-f677-4045-8a40-8e923f57c54f")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(attr smd)
+		(fp_line
+			(start -7.6 -7.6)
+			(end -7.6 7.6)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "Edge.Cuts")
+			(uuid "ab10999f-c4a6-4ba9-9517-6772ae919021")
+		)
+		(fp_line
+			(start -7.6 7.6)
+			(end 7.6 7.6)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "Edge.Cuts")
+			(uuid "a6f4f1cf-3e30-4f78-8f2d-eefaa0fcc242")
+		)
+		(fp_line
+			(start 7.6 -7.6)
+			(end -7.6 -7.6)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "Edge.Cuts")
+			(uuid "7d6cc4ef-891b-49f1-a410-379c87787fef")
+		)
+		(fp_line
+			(start 7.6 7.6)
+			(end 7.6 -7.6)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "Edge.Cuts")
+			(uuid "becc8556-c38c-4b37-9dfa-ffa5c97c1744")
+		)
+		(fp_line
+			(start -7.75 -7.75)
+			(end -7.75 7.75)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "B.CrtYd")
+			(uuid "0e694fd0-e190-4db1-a2b8-f493850b095f")
+		)
+		(fp_line
+			(start -7.75 7.75)
+			(end 7.75 7.75)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "B.CrtYd")
+			(uuid "a8e997a5-35fa-4858-9a96-a4e511bc3db6")
+		)
+		(fp_line
+			(start 7.75 -7.75)
+			(end -7.75 -7.75)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "B.CrtYd")
+			(uuid "18b4e3d6-8fa7-4720-ba36-b2b1b7c5d4ed")
+		)
+		(fp_line
+			(start 7.75 7.75)
+			(end 7.75 -7.75)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "B.CrtYd")
+			(uuid "71334f70-3de7-4ea2-b868-0d74ca803d19")
+		)
+		(model "${KICAD6_3RD_PARTY}/3dmodels/com_github_perigoso_keyswitch-kicad-library/3d-library.3dshapes/SW_Hotswap_Kailh_Choc_V1.wrl"
+			(offset
+				(xyz 0 0 0)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz 0 0 0)
+			)
+		)
+	)
+	(gr_arc
+		(start 175.9 102.8)
+		(mid 176.465685 103.034315)
+		(end 176.7 103.6)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(layer "Edge.Cuts")
+		(uuid "00000000-0000-0000-0000-00005c024767")
+	)
+	(gr_arc
+		(start 175.013952 102.795513)
+		(mid 174.518977 102.590488)
+		(end 174.313952 102.095513)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(layer "Edge.Cuts")
+		(uuid "00000000-0000-0000-0000-00005c1de061")
+	)
+	(gr_line
+		(start 176.7 103.6)
+		(end 176.7 116.1)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(layer "Edge.Cuts")
+		(uuid "061a8c1b-d3ca-4702-a524-463872c58d24")
+	)
+	(gr_line
+		(start 41 135.6)
+		(end 40.994153 60.531857)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(layer "Edge.Cuts")
+		(uuid "1154e6ec-f730-4ee1-9139-ec3427044829")
+	)
+	(gr_line
+		(start 134.6 139.4)
+		(end 135.4 139.6)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(layer "Edge.Cuts")
+		(uuid "389eed61-90f2-40fc-8363-394b62c242d8")
+	)
+	(gr_line
+		(start 174.332005 66.387365)
+		(end 174.313952 102.095513)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(layer "Edge.Cuts")
+		(uuid "3c07d57a-a29e-4568-afb9-05eaeefa9a9e")
+	)
+	(gr_line
+		(start 135.4 139.6)
+		(end 152.4 145.8)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(layer "Edge.Cuts")
+		(uuid "4f6b190a-fec1-47a6-a2b4-2a8f67002dfa")
+	)
+	(gr_line
+		(start 116.1 136.3)
+		(end 117.1 136.3)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(layer "Edge.Cuts")
+		(uuid "5556a526-c899-4616-a52d-7af9e5b3b6c4")
+	)
+	(gr_line
+		(start 116.2 54.3)
+		(end 173.632704 65.687453)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(layer "Edge.Cuts")
+		(uuid "5dcf3aa9-ee76-48f4-943a-464f5d0d79ec")
+	)
+	(gr_line
+		(start 168.9 133.7)
+		(end 176.7 116.1)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(layer "Edge.Cuts")
+		(uuid "5e111704-3463-4c1d-963d-89074e6d62bf")
+	)
+	(gr_line
+		(start 175.013952 102.795513)
+		(end 175.9 102.8)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(layer "Edge.Cuts")
+		(uuid "7063c40d-eef2-499a-ac1c-9365ca8b0704")
+	)
+	(gr_line
+		(start 177.9 140.5)
+		(end 169.7 154.9)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(layer "Edge.Cuts")
+		(uuid "834f9e4f-0114-4182-8941-57909ebff866")
+	)
+	(gr_arc
+		(start 169.2 134.6)
+		(mid 168.863604 134.212132)
+		(end 168.9 133.7)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(layer "Edge.Cuts")
+		(uuid "84ea174f-203d-4daa-82f9-7a5aaa3eff9f")
+	)
+	(gr_line
+		(start 153.1 146.1)
+		(end 168.7 155.1)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(layer "Edge.Cuts")
+		(uuid "86b400d3-3313-4637-bdac-942fb6cc956c")
+	)
+	(gr_line
+		(start 169.2 134.6)
+		(end 177.6 139.4)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(layer "Edge.Cuts")
+		(uuid "8be005e8-9b77-40e0-a25a-d9df08757a35")
+	)
+	(gr_arc
+		(start 41.7 136.3)
+		(mid 41.205025 136.094975)
+		(end 41 135.6)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(layer "Edge.Cuts")
+		(uuid "985fef14-fdb1-44be-b61c-f4987caf1b3a")
+	)
+	(gr_line
+		(start 98.1 54.3)
+		(end 116.2 54.3)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(layer "Edge.Cuts")
+		(uuid "9f25f374-5538-45aa-95c7-57a61ba10b3d")
+	)
+	(gr_line
+		(start 116.1 136.3)
+		(end 41.7 136.3)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(layer "Edge.Cuts")
+		(uuid "a614a08f-d180-4c6a-af49-df271bcf20f5")
+	)
+	(gr_arc
+		(start 169.7 154.9)
+		(mid 169.241421 155.207107)
+		(end 168.7 155.1)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(layer "Edge.Cuts")
+		(uuid "aa71a58f-c73d-4a17-a2c5-66e60a15a8a7")
+	)
+	(gr_line
+		(start 41.8 59.7)
+		(end 98.1 54.3)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(layer "Edge.Cuts")
+		(uuid "ca5da950-5f3c-4733-a0b1-306678b9b026")
+	)
+	(gr_line
+		(start 152.4 145.8)
+		(end 153.1 146.1)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(layer "Edge.Cuts")
+		(uuid "e8334960-bd7a-4062-a03b-3011e9143c62")
+	)
+	(gr_line
+		(start 117.1 136.3)
+		(end 134.6 139.4)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(layer "Edge.Cuts")
+		(uuid "ec30bd8e-9c07-495b-b7fb-4f74bd8a56b8")
+	)
+	(gr_arc
+		(start 173.632704 65.687453)
+		(mid 174.102342 65.917526)
+		(end 174.332005 66.387365)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(layer "Edge.Cuts")
+		(uuid "ed031c7a-8866-43de-9c7c-e3e1c3774161")
+	)
+	(gr_arc
+		(start 177.6 139.4)
+		(mid 177.977817 139.887868)
+		(end 177.9 140.5)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(layer "Edge.Cuts")
+		(uuid "f6c738d2-4ac5-4da6-ab85-a73966068300")
+	)
+	(gr_arc
+		(start 40.994153 60.531857)
+		(mid 41.267529 59.990432)
+		(end 41.8 59.7)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(layer "Edge.Cuts")
+		(uuid "fb2116df-cda6-4a2d-ad91-ed2433f07c98")
+	)
+	(dimension
+		(type aligned)
+		(layer "F.CrtYd")
+		(uuid "70577489-4ffd-46a3-8861-5003423939ae")
+		(pts
+			(xy 180.1 54.3) (xy 41 54.3)
+		)
+		(height 3.9)
+		(gr_text "139.1000 mm"
+			(at 110.55 48.6 0)
+			(layer "F.CrtYd")
+			(uuid "70577489-4ffd-46a3-8861-5003423939ae")
+			(effects
+				(font
+					(size 1.5 1.5)
+					(thickness 0.3)
+				)
+			)
+		)
+		(format
+			(prefix "")
+			(suffix "")
+			(units 2)
+			(units_format 1)
+			(precision 4)
+		)
+		(style
+			(thickness 0.3)
+			(arrow_length 1.27)
+			(text_position_mode 0)
+			(extension_height 0.58642)
+			(extension_offset 0) keep_text_aligned)
+	)
+	(zone
+		(net 1)
+		(net_name "GND")
+		(layer "B.Cu")
+		(uuid "00000000-0000-0000-0000-00005bfdcb9e")
+		(hatch edge 0.508)
+		(connect_pads
+			(clearance 0.3)
+		)
+		(min_thickness 0.254)
+		(filled_areas_thickness no)
+		(fill yes
+			(thermal_gap 0.508)
+			(thermal_bridge_width 0.508)
+		)
+		(polygon
+			(pts
+				(xy 39.5 59.1) (xy 39.5 137.1) (xy 117.1 137.1) (xy 136 140.3) (xy 152.9 146.7) (xy 169.6 156.2)
+				(xy 179.2 139.5) (xy 169.6 134.1) (xy 177.5 116.3) (xy 177.5 102) (xy 175.26 102) (xy 175.26 64.7)
+				(xy 116.3 53) (xy 98 53)
+			)
+		)
+		(filled_polygon
+			(layer "B.Cu")
+			(pts
+				(xy 116.204724 54.377905) (xy 173.578028 65.753581) (xy 173.59323 65.758578) (xy 173.598933 65.759295)
+				(xy 173.598935 65.759297) (xy 173.616251 65.761476) (xy 173.624972 65.762888) (xy 173.629489 65.763784)
+				(xy 173.632302 65.764377) (xy 173.74605 65.789766) (xy 173.768619 65.797094) (xy 173.873138 65.842314)
+				(xy 173.893935 65.853749) (xy 173.988108 65.917772) (xy 174.0064 65.932914) (xy 174.086883 66.013464)
+				(xy 174.102009 66.031769) (xy 174.165946 66.125984) (xy 174.177369 66.1468) (xy 174.222498 66.251344)
+				(xy 174.229813 66.273937) (xy 174.253491 66.380443) (xy 174.256494 66.407851) (xy 174.238472 102.052762)
+				(xy 174.238452 102.052902) (xy 174.238452 102.095583) (xy 174.238437 102.122574) (xy 174.238487 102.123083)
+				(xy 174.238487 102.171886) (xy 174.238487 102.17189) (xy 174.238488 102.171892) (xy 174.26829 102.32171)
+				(xy 174.326746 102.462837) (xy 174.41161 102.589849) (xy 174.479913 102.658155) (xy 174.519621 102.697865)
+				(xy 174.519623 102.697867) (xy 174.646628 102.782734) (xy 174.646628 102.782735) (xy 174.681909 102.79735)
+				(xy 174.787752 102.841198) (xy 174.93757 102.871008) (xy 175.013755 102.871012) (xy 175.855358 102.875274)
+				(xy 175.856757 102.8755) (xy 175.875469 102.8755) (xy 175.893821 102.8755) (xy 175.906171 102.876106)
+				(xy 176.02899 102.888204) (xy 176.053213 102.893022) (xy 176.16538 102.927047) (xy 176.188198 102.936499)
+				(xy 176.291565 102.991749) (xy 176.312103 103.005472) (xy 176.402706 103.079828) (xy 176.420171 103.097293)
+				(xy 176.494527 103.187896) (xy 176.50825 103.208434) (xy 176.563499 103.311798) (xy 176.572952 103.334619)
+				(xy 176.606977 103.446786) (xy 176.611795 103.47101) (xy 176.623893 103.593835) (xy 176.6245 103.606186)
+				(xy 176.6245 116.057349) (xy 176.613694 116.108401) (xy 168.832871 133.665125) (xy 168.830377 133.670419)
+				(xy 168.799597 133.731982) (xy 168.760768 133.873774) (xy 168.750347 134.020412) (xy 168.768735 134.16628)
+				(xy 168.768736 134.166281) (xy 168.815221 134.305739) (xy 168.888025 134.433456) (xy 168.888027 134.433458)
+				(xy 168.888028 134.43346) (xy 168.984351 134.544521) (xy 169.10049 134.634656) (xy 169.161222 134.665022)
+				(xy 169.167386 134.668321) (xy 174.327227 137.616801) (xy 177.40851 139.377534) (xy 177.557161 139.462477)
+				(xy 177.567571 139.469123) (xy 177.653887 139.530397) (xy 177.669229 139.541288) (xy 177.687871 139.55749)
+				(xy 177.769214 139.643567) (xy 177.784338 139.663097) (xy 177.847322 139.763385) (xy 177.858345 139.785489)
+				(xy 177.900554 139.896139) (xy 177.907051 139.919959) (xy 177.926864 140.036729) (xy 177.928589 140.061363)
+				(xy 177.925241 140.179748) (xy 177.922126 140.20425) (xy 177.895749 140.319702) (xy 177.887913 140.343128)
+				(xy 177.836975 140.456893) (xy 177.831378 140.467911) (xy 177.812722 140.500561) (xy 177.812576 140.500947)
+				(xy 169.642222 154.848886) (xy 169.629084 154.867726) (xy 169.553171 154.957817) (xy 169.532688 154.977223)
+				(xy 169.439935 155.047179) (xy 169.415648 155.06154) (xy 169.309651 155.109104) (xy 169.282777 155.1177)
+				(xy 169.168858 155.140483) (xy 169.140747 155.142884) (xy 169.024611 155.139748) (xy 168.996667 155.135833)
+				(xy 168.884142 155.106932) (xy 168.857775 155.096899) (xy 168.748161 155.040416) (xy 168.736004 155.033262)
+				(xy 168.71597 155.019908) (xy 168.702219 155.014116) (xy 153.160985 146.048019) (xy 153.152677 146.042785)
+				(xy 153.143545 146.036521) (xy 153.143544 146.03652) (xy 153.140714 146.035307) (xy 153.127392 146.028638)
+				(xy 153.124723 146.027098) (xy 153.114219 146.023536) (xy 153.105055 146.020024) (xy 152.452492 145.740354)
+				(xy 152.442002 145.734954) (xy 152.431088 145.730973) (xy 152.42464 145.728418) (xy 152.41396 145.723841)
+				(xy 152.402611 145.720587) (xy 152.035839 145.586823) (xy 154.941392 145.586823) (xy 154.941393 145.586827)
+				(xy 154.949167 145.61584) (xy 154.967451 145.639669) (xy 168.131036 153.239668) (xy 168.131037 153.239669)
+				(xy 168.157049 153.254687) (xy 168.157051 153.254687) (xy 168.157052 153.254688) (xy 168.186823 153.258607)
+				(xy 168.186824 153.258606) (xy 168.186827 153.258607) (xy 168.21584 153.250833) (xy 168.239669 153.232549)
+				(xy 175.854687 140.042951) (xy 175.858607 140.013173) (xy 175.850833 139.98416) (xy 175.832549 139.960331)
+				(xy 175.832548 139.96033) (xy 175.817747 139.951785) (xy 175.806537 139.945313) (xy 162.642951 132.345313)
+				(xy 162.64295 132.345312) (xy 162.642949 132.345312) (xy 162.642947 132.345311) (xy 162.613176 132.341392)
+				(xy 162.613172 132.341393) (xy 162.584162 132.349166) (xy 162.584159 132.349167) (xy 162.560331 132.36745)
+				(xy 162.560329 132.367453) (xy 154.952038 145.545398) (xy 154.952039 145.545399) (xy 154.945312 145.55705)
+				(xy 154.945311 145.557052) (xy 154.941392 145.586823) (xy 152.035839 145.586823) (xy 135.503796 139.55749)
+				(xy 135.449727 139.53777) (xy 135.439076 139.533324) (xy 135.432882 139.530398) (xy 135.432881 139.530397)
+				(xy 135.432879 139.530396) (xy 135.432878 139.530396) (xy 135.428566 139.529318) (xy 135.415955 139.525454)
+				(xy 135.411757 139.523923) (xy 135.404959 139.522872) (xy 135.393655 139.52059) (xy 134.642065 139.332692)
+				(xy 134.628511 139.328375) (xy 134.620082 139.326882) (xy 134.611505 139.325052) (xy 134.603209 139.322978)
+				(xy 134.589059 139.321385) (xy 131.253976 138.730599) (xy 137.1829 138.730599) (xy 137.1829 138.7306)
+				(xy 137.184209 138.760606) (xy 137.196904 138.78783) (xy 137.219048 138.808121) (xy 151.48941 144.002107)
+				(xy 151.489414 144.002109) (xy 151.502375 144.006826) (xy 151.502376 144.006827) (xy 151.530601 144.0171)
+				(xy 151.560607 144.01579) (xy 151.58783 144.003096) (xy 151.608121 143.980952) (xy 151.618394 143.952727)
+				(xy 156.8171 129.669399) (xy 156.81579 129.639393) (xy 156.803096 129.61217) (xy 156.780952 129.591879)
+				(xy 156.752727 129.581606) (xy 142.4694 124.3829) (xy 142.469399 124.3829) (xy 142.439392 124.384209)
+				(xy 142.412174 124.396901) (xy 142.412169 124.396905) (xy 142.39188 124.419046) (xy 142.391877 124.419052)
+				(xy 137.189402 138.712734) (xy 137.189401 138.712738) (xy 137.1829 138.730599) (xy 131.253976 138.730599)
+				(xy 117.134816 136.229491) (xy 117.123478 136.226182) (xy 117.112888 136.224076) (xy 117.100553 136.222992)
+				(xy 117.089751 136.223219) (xy 117.078015 136.2245) (xy 41.707079 136.2245) (xy 41.692971 136.223708)
+				(xy 41.57514 136.210431) (xy 41.547633 136.204152) (xy 41.514001 136.192384) (xy 41.442439 136.167343)
+				(xy 41.41702 136.155102) (xy 41.369835 136.125454) (xy 41.322648 136.095805) (xy 41.300591 136.078214)
+				(xy 41.221785 135.999408) (xy 41.204195 135.977352) (xy 41.144896 135.882978) (xy 41.132656 135.85756)
+				(xy 41.095845 135.752359) (xy 41.089569 135.724863) (xy 41.076292 135.607027) (xy 41.0755 135.59292)
+				(xy 41.0755 135.550428) (xy 41.075495 135.550404) (xy 41.075457 135.066491) (xy 118.418774 135.066491)
+				(xy 118.425274 135.095814) (xy 118.425275 135.095816) (xy 118.442503 135.12042) (xy 118.442504 135.120421)
+				(xy 118.462852 135.133383) (xy 118.467835 135.136558) (xy 118.497414 135.141774) (xy 118.497414 135.141773)
+				(xy 118.52772 135.147118) (xy 118.527779 135.147127) (xy 133.466492 137.781226) (xy 133.495816 137.774725)
+				(xy 133.52042 137.757497) (xy 133.536558 137.732165) (xy 133.541774 137.702586) (xy 133.541773 137.702585)
+				(xy 133.545293 137.682628) (xy 133.545294 137.682614) (xy 133.556899 137.616801) (xy 135.928854 124.164783)
+				(xy 154.189988 124.164783) (xy 154.200751 124.192823) (xy 154.221429 124.214612) (xy 154.248865 124.226827)
+				(xy 154.248867 124.226828) (xy 168.134758 130.409225) (xy 168.164783 130.410011) (xy 168.182133 130.40335)
+				(xy 168.192823 130.399248) (xy 168.193935 130.398192) (xy 168.214611 130.378572) (xy 174.409225 116.465242)
+				(xy 174.410011 116.435217) (xy 174.407615 116.428975) (xy 174.407328 116.427431) (xy 174.399247 116.407175)
+				(xy 174.378573 116.38539) (xy 174.378568 116.385386) (xy 174.373546 116.383151) (xy 174.373538 116.383144)
+				(xy 174.373537 116.383147) (xy 174.361709 116.37788) (xy 166.570489 112.909006) (xy 160.465242 110.190775)
+				(xy 160.464433 110.190753) (xy 160.435215 110.189988) (xy 160.407178 110.200751) (xy 160.407173 110.200754)
+				(xy 160.38539 110.221426) (xy 160.385389 110.221427) (xy 160.385389 110.221428) (xy 154.200248 124.113482)
+				(xy 154.190775 124.134758) (xy 154.189988 124.164783) (xy 135.928854 124.164783) (xy 136.181226 122.733508)
+				(xy 136.174725 122.704184) (xy 136.157497 122.67958) (xy 136.157496 122.679579) (xy 136.157495 122.679578)
+				(xy 136.132167 122.663443) (xy 136.132166 122.663442) (xy 136.132165 122.663442) (xy 136.116976 122.660763)
+				(xy 136.097166 122.65727) (xy 123.37912 120.414736) (xy 122.077714 120.185263) (xy 147.2495 120.185263)
+				(xy 147.2495 120.414736) (xy 147.27945 120.642231) (xy 147.279452 120.642238) (xy 147.338842 120.863887)
+				(xy 147.426656 121.075888) (xy 147.426657 121.075889) (xy 147.426662 121.0759) (xy 147.541386 121.274608)
+				(xy 147.541391 121.274615) (xy 147.681073 121.456652) (xy 147.681092 121.456673) (xy 147.843326 121.618907)
+				(xy 147.843347 121.618926) (xy 148.025384 121.758608) (xy 148.025391 121.758613) (xy 148.224099 121.873337)
+				(xy 148.224103 121.873338) (xy 148.224112 121.873344) (xy 148.436113 121.961158) (xy 148.657762 122.020548)
+				(xy 148.657766 122.020548) (xy 148.657768 122.020549) (xy 148.716398 122.028267) (xy 148.885266 122.0505)
+				(xy 148.885273 122.0505) (xy 149.114727 122.0505) (xy 149.114734 122.0505) (xy 149.320345 122.02343)
+				(xy 149.342231 122.020549) (xy 149.342231 122.020548) (xy 149.342238 122.020548) (xy 149.563887 121.961158)
+				(xy 149.775888 121.873344) (xy 149.974612 121.758611) (xy 150.156661 121.618919) (xy 150.318919 121.456661)
+				(xy 150.458611 121.274612) (xy 150.573344 121.075888) (xy 150.661158 120.863887) (xy 150.720548 120.642238)
+				(xy 150.7505 120.414734) (xy 150.7505 120.185266) (xy 150.720548 119.957762) (xy 150.661158 119.736113)
+				(xy 150.573344 119.524112) (xy 150.573338 119.524103) (xy 150.573337 119.524099) (xy 150.458613 119.325391)
+				(xy 150.458608 119.325384) (xy 150.318926 119.143347) (xy 150.318907 119.143326) (xy 150.156673 118.981092)
+				(xy 150.156652 118.981073) (xy 149.974615 118.841391) (xy 149.974608 118.841386) (xy 149.7759 118.726662)
+				(xy 149.775892 118.726658) (xy 149.775888 118.726656) (xy 149.563887 118.638842) (xy 149.342238 118.579452)
+				(xy 149.342231 118.57945) (xy 149.114736 118.5495) (xy 149.114734 118.5495) (xy 148.885266 118.5495)
+				(xy 148.885263 118.5495) (xy 148.657768 118.57945) (xy 148.436113 118.638842) (xy 148.22411 118.726657)
+				(xy 148.224099 118.726662) (xy 148.025391 118.841386) (xy 148.025384 118.841391) (xy 147.843347 118.981073)
+				(xy 147.843326 118.981092) (xy 147.681092 119.143326) (xy 147.681073 119.143347) (xy 147.541391 119.325384)
+				(xy 147.541386 119.325391) (xy 147.426662 119.524099) (xy 147.426657 119.52411) (xy 147.338842 119.736113)
+				(xy 147.27945 119.957768) (xy 147.2495 120.185263) (xy 122.077714 120.185263) (xy 121.133508 120.018774)
+				(xy 121.133507 120.018774) (xy 121.104185 120.025274) (xy 121.104183 120.025275) (xy 121.079579 120.042503)
+				(xy 121.063443 120.067833) (xy 121.063442 120.067835) (xy 121.058819 120.094056) (xy 118.418774 135.066491)
+				(xy 41.075457 135.066491) (xy 41.075035 129.639393) (xy 41.074244 119.484981) (xy 99.4745 119.484981)
+				(xy 99.4745 134.715018) (xy 99.485993 134.742766) (xy 99.485996 134.74277) (xy 99.507229 134.764003)
+				(xy 99.507233 134.764006) (xy 99.534982 134.7755) (xy 114.765018 134.7755) (xy 114.792767 134.764006)
+				(xy 114.814006 134.742767) (xy 114.8255 134.715018) (xy 114.8255 119.484982) (xy 114.814006 119.457233)
+				(xy 114.814003 119.457229) (xy 114.79277 119.435996) (xy 114.792766 119.435993) (xy 114.765018 119.4245)
+				(xy 99.565018 119.4245) (xy 99.534982 119.4245) (xy 99.507233 119.435993) (xy 99.507229 119.435996)
+				(xy 99.485996 119.457229) (xy 99.485993 119.457233) (xy 99.4745 119.484981) (xy 41.074244 119.484981)
+				(xy 41.07269 99.534981) (xy 42.3245 99.534981) (xy 42.3245 114.765018) (xy 42.335993 114.792766)
+				(xy 42.335996 114.79277) (xy 42.357229 114.814003) (xy 42.357233 114.814006) (xy 42.384982 114.8255)
+				(xy 57.615018 114.8255) (xy 57.642767 114.814006) (xy 57.664006 114.792767) (xy 57.6755 114.765018)
+				(xy 57.6755 99.534982) (xy 57.6755 99.534981) (xy 61.3745 99.534981) (xy 61.3745 114.765018) (xy 61.385993 114.792766)
+				(xy 61.385996 114.79277) (xy 61.407229 114.814003) (xy 61.407233 114.814006) (xy 61.434982 114.8255)
+				(xy 76.665018 114.8255) (xy 76.692767 114.814006) (xy 76.714006 114.792767) (xy 76.7255 114.765018)
+				(xy 76.7255 99.534982) (xy 76.714006 99.507233) (xy 76.714003 99.507229) (xy 76.69277 99.485996)
+				(xy 76.692766 99.485993) (xy 76.665018 99.4745) (xy 61.465018 99.4745) (xy 61.434982 99.4745) (xy 61.407233 99.485993)
+				(xy 61.407229 99.485996) (xy 61.385996 99.507229) (xy 61.385993 99.507233) (xy 61.3745 99.534981)
+				(xy 57.6755 99.534981) (xy 57.664006 99.507233) (xy 57.664003 99.507229) (xy 57.64277 99.485996)
+				(xy 57.642766 99.485993) (xy 57.615018 99.4745) (xy 42.415018 99.4745) (xy 42.384982 99.4745) (xy 42.357233 99.485993)
+				(xy 42.357229 99.485996) (xy 42.335996 99.507229) (xy 42.335993 99.507233) (xy 42.3245 99.534981)
+				(xy 41.07269 99.534981) (xy 41.07253 97.485263) (xy 57.7495 97.485263) (xy 57.7495 97.714736) (xy 57.77945 97.942231)
+				(xy 57.779452 97.942238) (xy 57.838842 98.163887) (xy 57.926656 98.375888) (xy 57.926657 98.375889)
+				(xy 57.926662 98.3759) (xy 58.041386 98.574608) (xy 58.041391 98.574615) (xy 58.181073 98.756652)
+				(xy 58.181092 98.756673) (xy 58.343326 98.918907) (xy 58.343347 98.918926) (xy 58.525384 99.058608)
+				(xy 58.525391 99.058613) (xy 58.724099 99.173337) (xy 58.724103 99.173338) (xy 58.724112 99.173344)
+				(xy 58.936113 99.261158) (xy 59.157762 99.320548) (xy 59.157766 99.320548) (xy 59.157768 99.320549)
+				(xy 59.216398 99.328267) (xy 59.385266 99.3505) (xy 59.385273 99.3505) (xy 59.614727 99.3505) (xy 59.614734 99.3505)
+				(xy 59.820345 99.32343) (xy 59.842231 99.320549) (xy 59.842231 99.320548) (xy 59.842238 99.320548)
+				(xy 60.063887 99.261158) (xy 60.275888 99.173344) (xy 60.474612 99.058611) (xy 60.656661 98.918919)
+				(xy 60.818919 98.756661) (xy 60.958611 98.574612) (xy 61.073344 98.375888) (xy 61.161158 98.163887)
+				(xy 61.220548 97.942238) (xy 61.2505 97.714734) (xy 61.2505 97.629981) (xy 80.4245 97.629981) (xy 80.4245 112.860018)
+				(xy 80.435993 112.887766) (xy 80.435996 112.88777) (xy 80.457229 112.909003) (xy 80.457233 112.909006)
+				(xy 80.484982 112.9205) (xy 95.715018 112.9205) (xy 95.742767 112.909006) (xy 95.764006 112.887767)
+				(xy 95.7755 112.860018) (xy 95.7755 97.629982) (xy 95.764006 97.602233) (xy 95.764003 97.602229)
+				(xy 95.74277 97.580996) (xy 95.742766 97.580993) (xy 95.715018 97.5695) (xy 80.515018 97.5695) (xy 80.484982 97.5695)
+				(xy 80.457233 97.580993) (xy 80.457229 97.580996) (xy 80.435996 97.602229) (xy 80.435993 97.602233)
+				(xy 80.4245 97.629981) (xy 61.2505 97.629981) (xy 61.2505 97.485266) (xy 61.220548 97.257762) (xy 61.161158 97.036113)
+				(xy 61.073344 96.824112) (xy 61.073338 96.824103) (xy 61.073337 96.824099) (xy 60.958613 96.625391)
+				(xy 60.958608 96.625384) (xy 60.818926 96.443347) (xy 60.818907 96.443326) (xy 60.656673 96.281092)
+				(xy 60.656652 96.281073) (xy 60.474615 96.141391) (xy 60.474608 96.141386) (xy 60.2759 96.026662)
+				(xy 60.275892 96.026658) (xy 60.275888 96.026656) (xy 60.063887 95.938842) (xy 59.842238 95.879452)
+				(xy 59.842231 95.87945) (xy 59.614736 95.8495) (xy 59.614734 95.8495) (xy 59.385266 95.8495) (xy 59.385263 95.8495)
+				(xy 59.157768 95.87945) (xy 58.936113 95.938842) (xy 58.72411 96.026657) (xy 58.724099 96.026662)
+				(xy 58.525391 96.141386) (xy 58.525384 96.141391) (xy 58.343347 96.281073) (xy 58.343326 96.281092)
+				(xy 58.181092 96.443326) (xy 58.181073 96.443347) (xy 58.041391 96.625384) (xy 58.041386 96.625391)
+				(xy 57.926662 96.824099) (xy 57.926657 96.82411) (xy 57.838842 97.036113) (xy 57.77945 97.257768)
+				(xy 57.7495 97.485263) (xy 41.07253 97.485263) (xy 41.071206 80.484981) (xy 42.3245 80.484981) (xy 42.3245 95.715018)
+				(xy 42.335993 95.742766) (xy 42.335996 95.74277) (xy 42.357229 95.764003) (xy 42.357233 95.764006)
+				(xy 42.384982 95.7755) (xy 57.615018 95.7755) (xy 57.642767 95.764006) (xy 57.664006 95.742767)
+				(xy 57.6755 95.715018) (xy 57.6755 80.484982) (xy 57.6755 80.484981) (xy 61.3745 80.484981) (xy 61.3745 95.715018)
+				(xy 61.385993 95.742766) (xy 61.385996 95.74277) (xy 61.407229 95.764003) (xy 61.407233 95.764006)
+				(xy 61.434982 95.7755) (xy 76.665018 95.7755) (xy 76.692767 95.764006) (xy 76.714006 95.742767)
+				(xy 76.7255 95.715018) (xy 76.7255 80.484982) (xy 76.714006 80.457233) (xy 76.714003 80.457229)
+				(xy 76.69277 80.435996) (xy 76.692766 80.435993) (xy 76.665018 80.4245) (xy 61.465018 80.4245) (xy 61.434982 80.4245)
+				(xy 61.407233 80.435993) (xy 61.407229 80.435996) (xy 61.385996 80.457229) (xy 61.385993 80.457233)
+				(xy 61.3745 80.484981) (xy 57.6755 80.484981) (xy 57.664006 80.457233) (xy 57.664003 80.457229)
+				(xy 57.64277 80.435996) (xy 57.642766 80.435993) (xy 57.615018 80.4245) (xy 42.415018 80.4245) (xy 42.384982 80.4245)
+				(xy 42.357233 80.435993) (xy 42.357229 80.435996) (xy 42.335996 80.457229) (xy 42.335993 80.457233)
+				(xy 42.3245 80.484981) (xy 41.071206 80.484981) (xy 41.071046 78.435263) (xy 57.7495 78.435263)
+				(xy 57.7495 78.664736) (xy 57.77945 78.892231) (xy 57.779452 78.892238) (xy 57.838842 79.113887)
+				(xy 57.926656 79.325888) (xy 57.926657 79.325889) (xy 57.926662 79.3259) (xy 58.041386 79.524608)
+				(xy 58.041391 79.524615) (xy 58.181073 79.706652) (xy 58.181092 79.706673) (xy 58.343326 79.868907)
+				(xy 58.343347 79.868926) (xy 58.525384 80.008608) (xy 58.525391 80.008613) (xy 58.724099 80.123337)
+				(xy 58.724103 80.123338) (xy 58.724112 80.123344) (xy 58.936113 80.211158) (xy 59.157762 80.270548)
+				(xy 59.157766 80.270548) (xy 59.157768 80.270549) (xy 59.216398 80.278267) (xy 59.385266 80.3005)
+				(xy 59.385273 80.3005) (xy 59.614727 80.3005) (xy 59.614734 80.3005) (xy 59.820345 80.27343) (xy 59.842231 80.270549)
+				(xy 59.842231 80.270548) (xy 59.842238 80.270548) (xy 60.063887 80.211158) (xy 60.275888 80.123344)
+				(xy 60.474612 80.008611) (xy 60.656661 79.868919) (xy 60.818919 79.706661) (xy 60.958611 79.524612)
+				(xy 61.073344 79.325888) (xy 61.161158 79.113887) (xy 61.220548 78.892238) (xy 61.2505 78.664734)
+				(xy 61.2505 78.579981) (xy 80.4245 78.579981) (xy 80.4245 93.810018) (xy 80.435993 93.837766) (xy 80.435996 93.83777)
+				(xy 80.457229 93.859003) (xy 80.457233 93.859006) (xy 80.484982 93.8705) (xy 95.715018 93.8705)
+				(xy 95.742767 93.859006) (xy 95.764006 93.837767) (xy 95.771373 93.819981) (xy 99.4745 93.819981)
+				(xy 99.4745 109.050018) (xy 99.485993 109.077766) (xy 99.485996 109.07777) (xy 99.507229 109.099003)
+				(xy 99.507233 109.099006) (xy 99.534982 109.1105) (xy 114.765018 109.1105) (xy 114.792767 109.099006)
+				(xy 114.814006 109.077767) (xy 114.8255 109.050018) (xy 114.8255 97.629981) (xy 118.5245 97.629981)
+				(xy 118.5245 112.860018) (xy 118.535993 112.887766) (xy 118.535996 112.88777) (xy 118.557229 112.909003)
+				(xy 118.557233 112.909006) (xy 118.584982 112.9205) (xy 133.815018 112.9205) (xy 133.842767 112.909006)
+				(xy 133.864006 112.887767) (xy 133.8755 112.860018) (xy 133.8755 101.439981) (xy 137.5745 101.439981)
+				(xy 137.5745 116.670018) (xy 137.585993 116.697766) (xy 137.585996 116.69777) (xy 137.607229 116.719003)
+				(xy 137.607233 116.719006) (xy 137.634982 116.7305) (xy 152.865018 116.7305) (xy 152.892767 116.719006)
+				(xy 152.914006 116.697767) (xy 152.9255 116.670018) (xy 152.9255 101.439982) (xy 152.914006 101.412233)
+				(xy 152.914003 101.412229) (xy 152.89277 101.390996) (xy 152.892766 101.390993) (xy 152.865018 101.3795)
+				(xy 137.665018 101.3795) (xy 137.634982 101.3795) (xy 137.607233 101.390993) (xy 137.607229 101.390996)
+				(xy 137.585996 101.412229) (xy 137.585993 101.412233) (xy 137.5745 101.439981) (xy 133.8755 101.439981)
+				(xy 133.8755 97.629982) (xy 133.864006 97.602233) (xy 133.864003 97.602229) (xy 133.84277 97.580996)
+				(xy 133.842766 97.580993) (xy 133.815018 97.5695) (xy 118.615018 97.5695) (xy 118.584982 97.5695)
+				(xy 118.557233 97.580993) (xy 118.557229 97.580996) (xy 118.535996 97.602229) (xy 118.535993 97.602233)
+				(xy 118.5245 97.629981) (xy 114.8255 97.629981) (xy 114.8255 95.208783) (xy 115.327115 95.208783)
+				(xy 115.327115 95.438256) (xy 115.357065 95.665751) (xy 115.357067 95.665758) (xy 115.416457 95.887407)
+				(xy 115.504271 96.099408) (xy 115.504272 96.099409) (xy 115.504277 96.09942) (xy 115.619001 96.298128)
+				(xy 115.619006 96.298135) (xy 115.758688 96.480172) (xy 115.758707 96.480193) (xy 115.920941 96.642427)
+				(xy 115.920962 96.642446) (xy 116.102999 96.782128) (xy 116.103006 96.782133) (xy 116.301714 96.896857)
+				(xy 116.301718 96.896858) (xy 116.301727 96.896864) (xy 116.513728 96.984678) (xy 116.735377 97.044068)
+				(xy 116.735381 97.044068) (xy 116.735383 97.044069) (xy 116.794013 97.051787) (xy 116.962881 97.07402)
+				(xy 116.962888 97.07402) (xy 117.192342 97.07402) (xy 117.192349 97.07402) (xy 117.39796 97.04695)
+				(xy 117.419846 97.044069) (xy 117.419846 97.044068) (xy 117.419853 97.044068) (xy 117.641502 96.984678)
+				(xy 117.853503 96.896864) (xy 118.052227 96.782131) (xy 118.234276 96.642439) (xy 118.396534 96.480181)
+				(xy 118.536226 96.298132) (xy 118.650959 96.099408) (xy 118.738773 95.887407) (xy 118.798163 95.665758)
+				(xy 118.828115 95.438254) (xy 118.828115 95.208786) (xy 118.798163 94.981282) (xy 118.738773 94.759633)
+				(xy 118.650959 94.547632) (xy 118.650953 94.547623) (xy 118.650952 94.547619) (xy 118.536228 94.348911)
+				(xy 118.536223 94.348904) (xy 118.396541 94.166867) (xy 118.396522 94.166846) (xy 118.234288 94.004612)
+				(xy 118.234267 94.004593) (xy 118.05223 93.864911) (xy 118.052223 93.864906) (xy 117.853515 93.750182)
+				(xy 117.853507 93.750178) (xy 117.853503 93.750176) (xy 117.641502 93.662362) (xy 117.419853 93.602972)
+				(xy 117.419846 93.60297) (xy 117.192351 93.57302) (xy 117.192349 93.57302) (xy 116.962881 93.57302)
+				(xy 116.962878 93.57302) (xy 116.735383 93.60297) (xy 116.513728 93.662362) (xy 116.301725 93.750177)
+				(xy 116.301714 93.750182) (xy 116.103006 93.864906) (xy 116.102999 93.864911) (xy 115.920962 94.004593)
+				(xy 115.920941 94.004612) (xy 115.758707 94.166846) (xy 115.758688 94.166867) (xy 115.619006 94.348904)
+				(xy 115.619001 94.348911) (xy 115.504277 94.547619) (xy 115.504272 94.54763) (xy 115.416457 94.759633)
+				(xy 115.357065 94.981288) (xy 115.327115 95.208783) (xy 114.8255 95.208783) (xy 114.8255 93.819982)
+				(xy 114.814006 93.792233) (xy 114.814003 93.792229) (xy 114.79277 93.770996) (xy 114.792766 93.770993)
+				(xy 114.765018 93.7595) (xy 99.565018 93.7595) (xy 99.534982 93.7595) (xy 99.507233 93.770993) (xy 99.507229 93.770996)
+				(xy 99.485996 93.792229) (xy 99.485993 93.792233) (xy 99.4745 93.819981) (xy 95.771373 93.819981)
+				(xy 95.7755 93.810018) (xy 95.7755 78.579982) (xy 95.764006 78.552233) (xy 95.764003 78.552229)
+				(xy 95.74277 78.530996) (xy 95.742766 78.530993) (xy 95.715018 78.5195) (xy 80.515018 78.5195) (xy 80.484982 78.5195)
+				(xy 80.457233 78.530993) (xy 80.457229 78.530996) (xy 80.435996 78.552229) (xy 80.435993 78.552233)
+				(xy 80.4245 78.579981) (xy 61.2505 78.579981) (xy 61.2505 78.435266) (xy 61.220548 78.207762) (xy 61.161158 77.986113)
+				(xy 61.073344 77.774112) (xy 61.073338 77.774103) (xy 61.073337 77.774099) (xy 60.958613 77.575391)
+				(xy 60.958608 77.575384) (xy 60.818926 77.393347) (xy 60.818907 77.393326) (xy 60.656673 77.231092)
+				(xy 60.656652 77.231073) (xy 60.474615 77.091391) (xy 60.474608 77.091386) (xy 60.2759 76.976662)
+				(xy 60.275892 76.976658) (xy 60.275888 76.976656) (xy 60.063887 76.888842) (xy 59.842238 76.829452)
+				(xy 59.842231 76.82945) (xy 59.614736 76.7995) (xy 59.614734 76.7995) (xy 59.385266 76.7995) (xy 59.385263 76.7995)
+				(xy 59.157768 76.82945) (xy 58.936113 76.888842) (xy 58.72411 76.976657) (xy 58.724099 76.976662)
+				(xy 58.525391 77.091386) (xy 58.525384 77.091391) (xy 58.343347 77.231073) (xy 58.343326 77.231092)
+				(xy 58.181092 77.393326) (xy 58.181073 77.393347) (xy 58.041391 77.575384) (xy 58.041386 77.575391)
+				(xy 57.926662 77.774099) (xy 57.926657 77.77411) (xy 57.838842 77.986113) (xy 57.77945 78.207768)
+				(xy 57.7495 78.435263) (xy 41.071046 78.435263) (xy 41.069722 61.434981) (xy 42.3245 61.434981)
+				(xy 42.3245 76.665018) (xy 42.335993 76.692766) (xy 42.335996 76.69277) (xy 42.357229 76.714003)
+				(xy 42.357233 76.714006) (xy 42.384982 76.7255) (xy 57.615018 76.7255) (xy 57.642767 76.714006)
+				(xy 57.664006 76.692767) (xy 57.6755 76.665018) (xy 57.6755 61.434982) (xy 57.6755 61.434981) (xy 61.3745 61.434981)
+				(xy 61.3745 76.665018) (xy 61.385993 76.692766) (xy 61.385996 76.69277) (xy 61.407229 76.714003)
+				(xy 61.407233 76.714006) (xy 61.434982 76.7255) (xy 76.665018 76.7255) (xy 76.692767 76.714006)
+				(xy 76.714006 76.692767) (xy 76.7255 76.665018) (xy 76.7255 61.434982) (xy 76.714006 61.407233)
+				(xy 76.714003 61.407229) (xy 76.69277 61.385996) (xy 76.692766 61.385993) (xy 76.665018 61.3745)
+				(xy 61.465018 61.3745) (xy 61.434982 61.3745) (xy 61.407233 61.385993) (xy 61.407229 61.385996)
+				(xy 61.385996 61.407229) (xy 61.385993 61.407233) (xy 61.3745 61.434981) (xy 57.6755 61.434981)
+				(xy 57.664006 61.407233) (xy 57.664003 61.407229) (xy 57.64277 61.385996) (xy 57.642766 61.385993)
+				(xy 57.615018 61.3745) (xy 42.415018 61.3745) (xy 42.384982 61.3745) (xy 42.357233 61.385993) (xy 42.357229 61.385996)
+				(xy 42.335996 61.407229) (xy 42.335993 61.407233) (xy 42.3245 61.434981) (xy 41.069722 61.434981)
+				(xy 41.069654 60.556245) (xy 41.073631 60.524832) (xy 41.077202 60.510957) (xy 41.106464 60.397262)
+				(xy 41.113659 60.376799) (xy 41.171709 60.248347) (xy 41.182314 60.229419) (xy 41.261546 60.112851)
+				(xy 41.27524 60.096028) (xy 41.373314 59.99479) (xy 41.389701 59.980562) (xy 41.50369 59.89767)
+				(xy 41.522284 59.886463) (xy 41.648804 59.824375) (xy 41.669041 59.816528) (xy 41.8014 59.777941)
+				(xy 41.824621 59.773484) (xy 44.363365 59.529981) (xy 80.4245 59.529981) (xy 80.4245 74.760018)
+				(xy 80.435993 74.787766) (xy 80.435996 74.78777) (xy 80.457229 74.809003) (xy 80.457233 74.809006)
+				(xy 80.484982 74.8205) (xy 95.715018 74.8205) (xy 95.742767 74.809006) (xy 95.764006 74.787767)
+				(xy 95.771373 74.769981) (xy 99.4745 74.769981) (xy 99.4745 90.000018) (xy 99.485993 90.027766)
+				(xy 99.485996 90.02777) (xy 99.507229 90.049003) (xy 99.507233 90.049006) (xy 99.534982 90.0605)
+				(xy 114.765018 90.0605) (xy 114.792767 90.049006) (xy 114.814006 90.027767) (xy 114.8255 90.000018)
+				(xy 114.8255 78.579981) (xy 118.5245 78.579981) (xy 118.5245 93.810018) (xy 118.535993 93.837766)
+				(xy 118.535996 93.83777) (xy 118.557229 93.859003) (xy 118.557233 93.859006) (xy 118.584982 93.8705)
+				(xy 133.815018 93.8705) (xy 133.842767 93.859006) (xy 133.864006 93.837767) (xy 133.8755 93.810018)
+				(xy 133.8755 82.389981) (xy 137.5745 82.389981) (xy 137.5745 97.620018) (xy 137.585993 97.647766)
+				(xy 137.585996 97.64777) (xy 137.607229 97.669003) (xy 137.607233 97.669006) (xy 137.634982 97.6805)
+				(xy 152.865018 97.6805) (xy 152.892767 97.669006) (xy 152.914006 97.647767) (xy 152.9255 97.620018)
+				(xy 152.9255 86.199981) (xy 156.6245 86.199981) (xy 156.6245 101.430018) (xy 156.635993 101.457766)
+				(xy 156.635996 101.45777) (xy 156.657229 101.479003) (xy 156.657233 101.479006) (xy 156.684982 101.4905)
+				(xy 171.915018 101.4905) (xy 171.942767 101.479006) (xy 171.964006 101.457767) (xy 171.9755 101.430018)
+				(xy 171.9755 86.199982) (xy 171.964006 86.172233) (xy 171.964003 86.172229) (xy 171.94277 86.150996)
+				(xy 171.942766 86.150993) (xy 171.915018 86.1395) (xy 156.715018 86.1395) (xy 156.684982 86.1395)
+				(xy 156.657233 86.150993) (xy 156.657229 86.150996) (xy 156.635996 86.172229) (xy 156.635993 86.172233)
+				(xy 156.6245 86.199981) (xy 152.9255 86.199981) (xy 152.9255 83.705263) (xy 153.1895 83.705263)
+				(xy 153.1895 83.934736) (xy 153.21945 84.162231) (xy 153.219452 84.162238) (xy 153.278842 84.383887)
+				(xy 153.366656 84.595888) (xy 153.366657 84.595889) (xy 153.366662 84.5959) (xy 153.481386 84.794608)
+				(xy 153.481391 84.794615) (xy 153.621073 84.976652) (xy 153.621092 84.976673) (xy 153.783326 85.138907)
+				(xy 153.783347 85.138926) (xy 153.965384 85.278608) (xy 153.965391 85.278613) (xy 154.164099 85.393337)
+				(xy 154.164103 85.393338) (xy 154.164112 85.393344) (xy 154.376113 85.481158) (xy 154.597762 85.540548)
+				(xy 154.597766 85.540548) (xy 154.597768 85.540549) (xy 154.656398 85.548267) (xy 154.825266 85.5705)
+				(xy 154.825273 85.5705) (xy 155.054727 85.5705) (xy 155.054734 85.5705) (xy 155.260345 85.54343)
+				(xy 155.282231 85.540549) (xy 155.282231 85.540548) (xy 155.282238 85.540548) (xy 155.503887 85.481158)
+				(xy 155.715888 85.393344) (xy 155.914612 85.278611) (xy 156.096661 85.138919) (xy 156.258919 84.976661)
+				(xy 156.398611 84.794612) (xy 156.513344 84.595888) (xy 156.601158 84.383887) (xy 156.660548 84.162238)
+				(xy 156.6905 83.934734) (xy 156.6905 83.705266) (xy 156.660548 83.477762) (xy 156.601158 83.256113)
+				(xy 156.513344 83.044112) (xy 156.513338 83.044103) (xy 156.513337 83.044099) (xy 156.398613 82.845391)
+				(xy 156.398608 82.845384) (xy 156.258926 82.663347) (xy 156.258907 82.663326) (xy 156.096673 82.501092)
+				(xy 156.096652 82.501073) (xy 155.914615 82.361391) (xy 155.914608 82.361386) (xy 155.7159 82.246662)
+				(xy 155.715892 82.246658) (xy 155.715888 82.246656) (xy 155.503887 82.158842) (xy 155.282238 82.099452)
+				(xy 155.282231 82.09945) (xy 155.054736 82.0695) (xy 155.054734 82.0695) (xy 154.825266 82.0695)
+				(xy 154.825263 82.0695) (xy 154.597768 82.09945) (xy 154.376113 82.158842) (xy 154.16411 82.246657)
+				(xy 154.164099 82.246662) (xy 153.965391 82.361386) (xy 153.965384 82.361391) (xy 153.783347 82.501073)
+				(xy 153.783326 82.501092) (xy 153.621092 82.663326) (xy 153.621073 82.663347) (xy 153.481391 82.845384)
+				(xy 153.481386 82.845391) (xy 153.366662 83.044099) (xy 153.366657 83.04411) (xy 153.278842 83.256113)
+				(xy 153.21945 83.477768) (xy 153.1895 83.705263) (xy 152.9255 83.705263) (xy 152.9255 82.389982)
+				(xy 152.914006 82.362233) (xy 152.914003 82.362229) (xy 152.89277 82.340996) (xy 152.892766 82.340993)
+				(xy 152.865018 82.3295) (xy 137.665018 82.3295) (xy 137.634982 82.3295) (xy 137.607233 82.340993)
+				(xy 137.607229 82.340996) (xy 137.585996 82.362229) (xy 137.585993 82.362233) (xy 137.5745 82.389981)
+				(xy 133.8755 82.389981) (xy 133.8755 78.579982) (xy 133.864006 78.552233) (xy 133.864003 78.552229)
+				(xy 133.84277 78.530996) (xy 133.842766 78.530993) (xy 133.815018 78.5195) (xy 118.615018 78.5195)
+				(xy 118.584982 78.5195) (xy 118.557233 78.530993) (xy 118.557229 78.530996) (xy 118.535996 78.552229)
+				(xy 118.535993 78.552233) (xy 118.5245 78.579981) (xy 114.8255 78.579981) (xy 114.8255 74.769982)
+				(xy 114.814006 74.742233) (xy 114.814003 74.742229) (xy 114.79277 74.720996) (xy 114.792766 74.720993)
+				(xy 114.765018 74.7095) (xy 99.565018 74.7095) (xy 99.534982 74.7095) (xy 99.507233 74.720993) (xy 99.507229 74.720996)
+				(xy 99.485996 74.742229) (xy 99.485993 74.742233) (xy 99.4745 74.769981) (xy 95.771373 74.769981)
+				(xy 95.7755 74.760018) (xy 95.7755 59.529982) (xy 95.764006 59.502233) (xy 95.764003 59.502229)
+				(xy 95.74277 59.480996) (xy 95.742766 59.480993) (xy 95.715018 59.4695) (xy 80.515018 59.4695) (xy 80.484982 59.4695)
+				(xy 80.457233 59.480993) (xy 80.457229 59.480996) (xy 80.435996 59.502229) (xy 80.435993 59.502233)
+				(xy 80.4245 59.529981) (xy 44.363365 59.529981) (xy 84.086142 55.719981) (xy 99.4745 55.719981)
+				(xy 99.4745 70.950018) (xy 99.485993 70.977766) (xy 99.485996 70.97777) (xy 99.507229 70.999003)
+				(xy 99.507233 70.999006) (xy 99.534982 71.0105) (xy 114.765018 71.0105) (xy 114.792767 70.999006)
+				(xy 114.814006 70.977767) (xy 114.8255 70.950018) (xy 114.8255 59.529981) (xy 118.5245 59.529981)
+				(xy 118.5245 74.760018) (xy 118.535993 74.787766) (xy 118.535996 74.78777) (xy 118.557229 74.809003)
+				(xy 118.557233 74.809006) (xy 118.584982 74.8205) (xy 133.815018 74.8205) (xy 133.842767 74.809006)
+				(xy 133.864006 74.787767) (xy 133.8755 74.760018) (xy 133.8755 63.339981) (xy 137.5745 63.339981)
+				(xy 137.5745 78.570018) (xy 137.585993 78.597766) (xy 137.585996 78.59777) (xy 137.607229 78.619003)
+				(xy 137.607233 78.619006) (xy 137.634982 78.6305) (xy 152.865018 78.6305) (xy 152.892767 78.619006)
+				(xy 152.914006 78.597767) (xy 152.9255 78.570018) (xy 152.9255 67.149981) (xy 156.6245 67.149981)
+				(xy 156.6245 82.380018) (xy 156.635993 82.407766) (xy 156.635996 82.40777) (xy 156.657229 82.429003)
+				(xy 156.657233 82.429006) (xy 156.684982 82.4405) (xy 171.915018 82.4405) (xy 171.942767 82.429006)
+				(xy 171.964006 82.407767) (xy 171.9755 82.380018) (xy 171.9755 67.149982) (xy 171.964006 67.122233)
+				(xy 171.964003 67.122229) (xy 171.94277 67.100996) (xy 171.942766 67.100993) (xy 171.915018 67.0895)
+				(xy 156.715018 67.0895) (xy 156.684982 67.0895) (xy 156.657233 67.100993) (xy 156.657229 67.100996)
+				(xy 156.635996 67.122229) (xy 156.635993 67.122233) (xy 156.6245 67.149981) (xy 152.9255 67.149981)
+				(xy 152.9255 63.339982) (xy 152.914006 63.312233) (xy 152.914003 63.312229) (xy 152.89277 63.290996)
+				(xy 152.892766 63.290993) (xy 152.865018 63.2795) (xy 137.665018 63.2795) (xy 137.634982 63.2795)
+				(xy 137.607233 63.290993) (xy 137.607229 63.290996) (xy 137.585996 63.312229) (xy 137.585993 63.312233)
+				(xy 137.5745 63.339981) (xy 133.8755 63.339981) (xy 133.8755 59.529982) (xy 133.864006 59.502233)
+				(xy 133.864003 59.502229) (xy 133.84277 59.480996) (xy 133.842766 59.480993) (xy 133.815018 59.4695)
+				(xy 118.615018 59.4695) (xy 118.584982 59.4695) (xy 118.557233 59.480993) (xy 118.557229 59.480996)
+				(xy 118.535996 59.502229) (xy 118.535993 59.502233) (xy 118.5245 59.529981) (xy 114.8255 59.529981)
+				(xy 114.8255 55.719982) (xy 114.814006 55.692233) (xy 114.814003 55.692229) (xy 114.79277 55.670996)
+				(xy 114.792766 55.670993) (xy 114.765018 55.6595) (xy 99.565018 55.6595) (xy 99.534982 55.6595)
+				(xy 99.507233 55.670993) (xy 99.507229 55.670996) (xy 99.485996 55.692229) (xy 99.485993 55.692233)
+				(xy 99.4745 55.719981) (xy 84.086142 55.719981) (xy 95.318962 54.642588) (xy 98.097605 54.376076)
+				(xy 98.109635 54.3755) (xy 116.180219 54.3755)
+			)
+		)
+	)
+)
